@@ -3,7 +3,7 @@
     "message": "id"
   },
   "extName": {
-    "message": "Clip Share untuk YouTube"
+    "message": "YouClip untuk YouTube"
   },
   "extDescription": {
     "message": "Bagikan link YouTube yang mulai dan berhenti tepat di momen yang Anda pilih."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Link klip"
+  },
+  "clipTitle": {
+    "message": "Judul klip"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Opsional"
   },
   "clipLength": {
     "message": "Durasi: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Buka video YouTube untuk membagikan klipnya."
   },
   "msgReloadTab": {
-    "message": "Muat ulang tab YouTube ini agar Clip Share dapat terhubung."
+    "message": "Muat ulang tab YouTube ini agar YouClip dapat terhubung."
   },
   "msgLostConnection": {
     "message": "Koneksi ke tab YouTube terputus. Muat ulang tab lalu coba lagi."
@@ -147,7 +153,7 @@
     "message": "Link YouTube"
   },
   "everyoneHint": {
-    "message": "Membuka halaman yang hanya memutar klip ini, di perangkat apa pun, bahkan tanpa Clip Share."
+    "message": "Membuka halaman yang hanya memutar klip ini, di perangkat apa pun, bahkan tanpa YouClip."
   },
   "watchOnYouTube": {
     "message": "Tonton di YouTube"

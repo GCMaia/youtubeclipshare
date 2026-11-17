@@ -3,7 +3,7 @@
     "message": "ar"
   },
   "extName": {
-    "message": "Clip Share لـ YouTube"
+    "message": "YouClip لـ YouTube"
   },
   "extDescription": {
     "message": "شارك روابط YouTube تبدأ وتنتهي في اللحظات التي تختارها بالضبط."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "رابط المقطع"
+  },
+  "clipTitle": {
+    "message": "عنوان المقطع"
+  },
+  "clipTitlePlaceholder": {
+    "message": "اختياري"
   },
   "clipLength": {
     "message": "المدة: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "افتح فيديو على YouTube لمشاركة مقطع منه."
   },
   "msgReloadTab": {
-    "message": "أعد تحميل علامة تبويب YouTube هذه حتى يتمكن Clip Share من الاتصال بها."
+    "message": "أعد تحميل علامة تبويب YouTube هذه حتى يتمكن YouClip من الاتصال بها."
   },
   "msgLostConnection": {
     "message": "انقطع الاتصال بعلامة تبويب YouTube. أعد تحميلها وحاول مرة أخرى."
@@ -147,7 +153,7 @@
     "message": "رابط YouTube"
   },
   "everyoneHint": {
-    "message": "يفتح صفحة تشغّل هذا المقطع فقط، على أي جهاز، حتى بدون Clip Share."
+    "message": "يفتح صفحة تشغّل هذا المقطع فقط، على أي جهاز، حتى بدون YouClip."
   },
   "watchOnYouTube": {
     "message": "المشاهدة على YouTube"

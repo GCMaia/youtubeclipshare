@@ -3,7 +3,7 @@
     "message": "ja"
   },
   "extName": {
-    "message": "Clip Share for YouTube"
+    "message": "YouClip for YouTube"
   },
   "extDescription": {
     "message": "選んだ瞬間から始まり、選んだ瞬間で止まる YouTube リンクを共有できます。"
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "クリップのリンク"
+  },
+  "clipTitle": {
+    "message": "クリップのタイトル"
+  },
+  "clipTitlePlaceholder": {
+    "message": "任意"
   },
   "clipLength": {
     "message": "長さ: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "クリップを共有するには YouTube の動画を開いてください。"
   },
   "msgReloadTab": {
-    "message": "Clip Share が接続できるように、この YouTube タブを再読み込みしてください。"
+    "message": "YouClip が接続できるように、この YouTube タブを再読み込みしてください。"
   },
   "msgLostConnection": {
     "message": "YouTube タブとの接続が切れました。タブを再読み込みしてもう一度お試しください。"
@@ -147,7 +153,7 @@
     "message": "YouTube のリンク"
   },
   "everyoneHint": {
-    "message": "このクリップだけを再生するページを開きます。Clip Share がなくても、どのデバイスでも視聴できます。"
+    "message": "このクリップだけを再生するページを開きます。YouClip がなくても、どのデバイスでも視聴できます。"
   },
   "watchOnYouTube": {
     "message": "YouTube で見る"

@@ -3,7 +3,7 @@
     "message": "es"
   },
   "extName": {
-    "message": "Clip Share para YouTube"
+    "message": "YouClip para YouTube"
   },
   "extDescription": {
     "message": "Comparte enlaces de YouTube que empiezan y terminan justo en los momentos que elijas."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Enlace del clip"
+  },
+  "clipTitle": {
+    "message": "Título del clip"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Opcional"
   },
   "clipLength": {
     "message": "Duración: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Abre un video de YouTube para compartir un clip."
   },
   "msgReloadTab": {
-    "message": "Vuelve a cargar esta pestaña de YouTube para que Clip Share pueda conectarse."
+    "message": "Vuelve a cargar esta pestaña de YouTube para que YouClip pueda conectarse."
   },
   "msgLostConnection": {
     "message": "Se perdió la conexión con la pestaña de YouTube. Vuelve a cargarla e inténtalo de nuevo."
@@ -147,7 +153,7 @@
     "message": "Enlace de YouTube"
   },
   "everyoneHint": {
-    "message": "Abre una página que reproduce solo este clip, en cualquier dispositivo, incluso sin Clip Share."
+    "message": "Abre una página que reproduce solo este clip, en cualquier dispositivo, incluso sin YouClip."
   },
   "watchOnYouTube": {
     "message": "Ver en YouTube"

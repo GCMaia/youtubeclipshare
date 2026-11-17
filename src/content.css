@@ -1,4 +1,4 @@
-/* Clip Share for YouTube — styles injected into youtube.com.
+/* YouClip for YouTube — styles injected into youtube.com.
  * The picker uses its own high-contrast palette; content.js adds .ytcs-dark when the
  * page behind it is dark. */
 
@@ -275,6 +275,20 @@ html[dark] .ytcs-picker.ytcs-docked,
 .ytcs-segment:focus-visible {
   outline: 2px solid var(--ytcs-accent);
   outline-offset: 1px;
+}
+
+.ytcs-title-field {
+  margin-top: 12px;
+}
+
+.ytcs-title-input {
+  width: 100%;
+  min-width: 0;
+}
+
+.ytcs-input::placeholder {
+  color: var(--ytcs-text-muted);
+  opacity: 0.8;
 }
 
 .ytcs-link-row {

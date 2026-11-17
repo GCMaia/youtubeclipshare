@@ -3,7 +3,7 @@
     "message": "ko"
   },
   "extName": {
-    "message": "Clip Share for YouTube"
+    "message": "YouClip for YouTube"
   },
   "extDescription": {
     "message": "선택한 순간에 시작하고 멈추는 YouTube 링크를 공유하세요."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "클립 링크"
+  },
+  "clipTitle": {
+    "message": "클립 제목"
+  },
+  "clipTitlePlaceholder": {
+    "message": "선택사항"
   },
   "clipLength": {
     "message": "길이: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "클립을 공유하려면 YouTube 동영상을 여세요."
   },
   "msgReloadTab": {
-    "message": "Clip Share가 연결될 수 있도록 이 YouTube 탭을 새로고침하세요."
+    "message": "YouClip이 연결될 수 있도록 이 YouTube 탭을 새로고침하세요."
   },
   "msgLostConnection": {
     "message": "YouTube 탭과의 연결이 끊어졌습니다. 탭을 새로고침한 후 다시 시도하세요."
@@ -147,7 +153,7 @@
     "message": "YouTube 링크"
   },
   "everyoneHint": {
-    "message": "이 클립만 재생하는 페이지를 엽니다. Clip Share 없이도 모든 기기에서 볼 수 있습니다."
+    "message": "이 클립만 재생하는 페이지를 엽니다. YouClip 없이도 모든 기기에서 볼 수 있습니다."
   },
   "watchOnYouTube": {
     "message": "YouTube에서 보기"

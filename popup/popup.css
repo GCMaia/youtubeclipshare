@@ -168,6 +168,19 @@ label {
   outline-offset: 1px;
 }
 
+.title-field {
+  margin-top: 12px;
+}
+
+#clip-title {
+  width: 100%;
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.8;
+}
+
 .link {
   width: 100%;
   margin-top: 10px;

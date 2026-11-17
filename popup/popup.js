@@ -1,4 +1,4 @@
-/* Clip Share popup: the same start/end picker as the Clip button on the page,
+/* YouClip popup: the same start/end picker as the Clip button on the page,
  * for when you'd rather use the toolbar button. Talks to the content script. */
 (() => {
   'use strict';
@@ -12,6 +12,7 @@
     C.applyLocale(document.documentElement);
     for (const node of document.querySelectorAll('[data-i18n]')) node.textContent = t(node.dataset.i18n);
     for (const node of document.querySelectorAll('[data-i18n-title]')) node.title = t(node.dataset.i18nTitle);
+    for (const node of document.querySelectorAll('[data-i18n-placeholder]')) node.placeholder = t(node.dataset.i18nPlaceholder);
     for (const node of document.querySelectorAll('[data-i18n-aria-label]')) {
       node.setAttribute('aria-label', t(node.dataset.i18nAriaLabel));
     }
@@ -30,6 +31,8 @@
     length: $('length'),
     start: $('start'),
     end: $('end'),
+    clipTitle: $('clip-title'),
+    titleField: $('title-field'),
     startNow: $('start-now'),
     endNow: $('end-now'),
     link: $('link'),
@@ -38,6 +41,8 @@
     cancelPreview: $('cancel-preview'),
     copy: $('copy'),
   };
+
+  el.clipTitle.maxLength = C.MAX_TITLE_LENGTH;
 
   let tabId = null;
   let videoId = null;
@@ -48,6 +53,7 @@
 
   function showLinkType() {
     for (const button of typeButtons) button.setAttribute('aria-pressed', String(button.dataset.linkType === linkType));
+    el.titleField.hidden = linkType === 'youtube'; // YouTube links don't carry the title
     $('footer-hint').textContent = linkType === 'youtube' ? t('stopHint') : t('everyoneHint');
   }
 
@@ -78,7 +84,7 @@
     el.start.classList.toggle('invalid', start == null);
     el.end.classList.toggle('invalid', end == null || (start != null && end <= start));
     el.error.textContent = error ? t(error.key, error.subs) : '';
-    link = error ? '' : C.buildClipLink(linkType, videoId, start, end);
+    link = error ? '' : C.buildClipLink(linkType, videoId, start, end, el.clipTitle.value);
     el.link.value = link;
     el.length.textContent = error ? '' : t('clipLength', [C.formatTime(end - start)]);
     el.copy.disabled = el.preview.disabled = !!error;
@@ -86,7 +92,7 @@
 
   function onEdited() {
     update();
-    send({ type: 'ytcs:setDraft', videoId, start: el.start.value, end: el.end.value }).catch(() => {});
+    send({ type: 'ytcs:setDraft', videoId, start: el.start.value, end: el.end.value, title: el.clipTitle.value }).catch(() => {});
   }
 
   async function setFromNow(input, kind) {
@@ -129,6 +135,7 @@
     el.title.title = state.title;
     el.start.value = state.initial.start;
     el.end.value = state.initial.end;
+    el.clipTitle.value = state.initial.title ?? '';
     el.cancelPreview.hidden = !state.previewing;
     el.picker.hidden = false;
     update();
@@ -152,6 +159,11 @@
       }
     });
   }
+
+  el.clipTitle.addEventListener('input', onEdited);
+  el.clipTitle.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && link) el.copy.click();
+  });
 
   el.startNow.addEventListener('click', () => setFromNow(el.start, 'start'));
   el.endNow.addEventListener('click', () => setFromNow(el.end, 'end'));

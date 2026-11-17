@@ -1,4 +1,4 @@
-/* Clip Share web player: a dark "theater" page with just the clip. */
+/* YouClip web player (youclip.ca): a dark "theater" page with just the clip. */
 
 :root {
   color-scheme: dark;
@@ -138,11 +138,34 @@ body {
   font-variant-numeric: tabular-nums;
 }
 
+.clip-sep,
+#clip-length {
+  color: var(--text-muted);
+}
+
+/* The sharer's title for the clip, when the link has one. */
+.clip-title {
+  margin: 12px 0 0;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+/* The video's own name: the main heading, or a smaller line under the clip title. */
 .title {
   margin: 10px 0 6px;
   font-size: 20px;
   font-weight: 600;
   line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.has-clip-title .title {
+  margin-top: 4px;
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .title:empty {

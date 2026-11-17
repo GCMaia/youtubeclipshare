@@ -1,14 +1,15 @@
 /*
- * Shared helpers for Clip Share: time parsing/formatting and clip link encoding.
- * Loaded as a content script, by the popup, and by the Node tests.
+ * Shared helpers for YouClip: time parsing/formatting and clip link encoding.
+ * Loaded as a content script, by the popup, by the web player and by the Node tests.
  *
- * Clip link formats (same parameters in both):
+ * Clip link formats:
  *   https://www.youtube.com/watch?v=<id>&t=<start>s&end=<end>
  *     - `t` is YouTube's own start parameter, so the link still starts at the
  *       right moment for viewers who don't have the extension.
  *     - `end` (seconds) is read by the extension, which pauses playback there.
- *   <WEB_PLAYER_URL>watch/<id>?start=<start>&end=<end>
- *     - Clip Share's web player (web/), which plays just the clip for anyone.
+ *   <WEB_PLAYER_URL>watch/<id>?start=<start>&end=<end>[&title=<clip title>]
+ *     - YouClip's web player (web/, at youclip.ca), which plays just the clip for anyone.
+ *     - `title` is optional and shown above the video's own name.
  */
 (function (root) {
   'use strict';
@@ -120,16 +121,33 @@
     return setClipParams(new URL('https://www.youtube.com/watch'), videoId, start, end);
   }
 
-  // Address where Clip Share's web player (the web/ folder) is hosted. It plays a clip
+  // Address where YouClip's web player (the web/ folder) is hosted. It plays a clip
   // for anyone, on any device, without the extension. Keep the trailing slash. Setting
   // it to '' hides the "Link for everyone" option, so only YouTube links are copied.
   const WEB_PLAYER_URL = 'https://youclip.ca/';
 
-  /** A web player link, which works without the extension: <base>watch/<id>?start=…&end=… */
-  function buildWebClipUrl(videoId, start, end, base = WEB_PLAYER_URL) {
+  const TITLE_PARAM = 'title';
+  const MAX_TITLE_LENGTH = 100; // characters
+
+  /**
+   * Tidies an optional clip title: one line, no control or text-direction override
+   * characters, at most MAX_TITLE_LENGTH characters. Returns '' when there's no title.
+   */
+  function cleanClipTitle(title) {
+    const text = String(title ?? '')
+      .replace(/[\u0000-\u001f\u007f-\u009f‪-‮⁦-⁩]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+    return Array.from(text).slice(0, MAX_TITLE_LENGTH).join('').trim();
+  }
+
+  /** A web player link, which works without the extension: <base>watch/<id>?start=…&end=…[&title=…] */
+  function buildWebClipUrl(videoId, start, end, title = '', base = WEB_PLAYER_URL) {
     const url = new URL(`watch/${videoId}`, base);
     url.searchParams.set('start', String(start));
     url.searchParams.set('end', String(end));
+    const cleanTitle = cleanClipTitle(title);
+    if (cleanTitle) url.searchParams.set(TITLE_PARAM, cleanTitle);
     return url.toString();
   }
 
@@ -137,9 +155,10 @@
   const LINK_TYPES = WEB_PLAYER_URL ? ['everyone', 'youtube'] : ['youtube'];
   const DEFAULT_LINK_TYPE = LINK_TYPES[0];
 
-  function buildClipLink(linkType, videoId, start, end) {
+  /** The link the picker copies. The clip title only goes in web player links, which show it. */
+  function buildClipLink(linkType, videoId, start, end, title = '') {
     return linkType === 'everyone' && WEB_PLAYER_URL
-      ? buildWebClipUrl(videoId, start, end)
+      ? buildWebClipUrl(videoId, start, end, title)
       : buildClipUrl(videoId, start, end);
   }
 
@@ -184,8 +203,9 @@
   }
 
   /**
-   * Reads the clip from a web player link: /watch/<id>?start=…&end=… (also accepts `t`
-   * for the start, and the YouTube-style ?v=…&t=…&end=… form).
+   * Reads the clip from a web player link: /watch/<id>?start=…&end=…[&title=…] (also accepts
+   * `t` for the start, and the YouTube-style ?v=…&t=…&end=… form). Returns
+   * { videoId, start, end, title? } (title only when the link has one), or null.
    */
   function parseWebClipUrl(href) {
     let url;
@@ -194,17 +214,25 @@
     } catch {
       return null;
     }
+    let clip;
     const m = url.pathname.match(/\/watch\/([\w-]{11})\/?$/);
-    if (!m) return parseClipFromUrl(`https://www.youtube.com/watch${url.search}`);
-    const end = parseTime(url.searchParams.get(END_PARAM));
-    const start = parseTime(url.searchParams.get('start') ?? url.searchParams.get('t') ?? '0') ?? 0;
-    if (end == null || end <= start) return null;
-    return { videoId: m[1], start, end };
+    if (m) {
+      const end = parseTime(url.searchParams.get(END_PARAM));
+      const start = parseTime(url.searchParams.get('start') ?? url.searchParams.get('t') ?? '0') ?? 0;
+      clip = end == null || end <= start ? null : { videoId: m[1], start, end };
+    } else {
+      clip = parseClipFromUrl(`https://www.youtube.com/watch${url.search}`);
+    }
+    const title = cleanClipTitle(url.searchParams.get(TITLE_PARAM));
+    if (clip && title) clip.title = title;
+    return clip;
   }
 
   const api = {
     END_PARAM,
     WEB_PLAYER_URL,
+    MAX_TITLE_LENGTH,
+    cleanClipTitle,
     LINK_TYPES,
     DEFAULT_LINK_TYPE,
     formatTime,

@@ -67,9 +67,9 @@ test('buildClipUrl and parseClipFromUrl round-trip', () => {
 });
 
 test('web player links', () => {
-  const base = 'https://clipshare.example/';
-  const url = C.buildWebClipUrl('dQw4w9WgXcQ', 83, 120, base);
-  assert.equal(url, 'https://clipshare.example/watch/dQw4w9WgXcQ?start=83&end=120');
+  const base = 'https://player.example/';
+  const url = C.buildWebClipUrl('dQw4w9WgXcQ', 83, 120, '', base);
+  assert.equal(url, 'https://player.example/watch/dQw4w9WgXcQ?start=83&end=120');
   assert.deepEqual(C.parseWebClipUrl(url), { videoId: 'dQw4w9WgXcQ', start: 83, end: 120 });
   assert.deepEqual(C.parseWebClipUrl(`${base}watch/dQw4w9WgXcQ/?t=1m&end=90`), { videoId: 'dQw4w9WgXcQ', start: 60, end: 90 });
   assert.deepEqual(C.parseWebClipUrl(`${base}?v=dQw4w9WgXcQ&t=83s&end=120`), { videoId: 'dQw4w9WgXcQ', start: 83, end: 120 }, 'query form');
@@ -88,6 +88,43 @@ test('links for everyone go to the web player at youclip.ca', () => {
   assert.equal(link, 'https://youclip.ca/watch/dQw4w9WgXcQ?start=83&end=120');
   assert.deepEqual(C.parseWebClipUrl(link), { videoId: 'dQw4w9WgXcQ', start: 83, end: 120 });
   assert.equal(C.buildClipLink('youtube', 'dQw4w9WgXcQ', 83, 120), 'https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=83s&end=120');
+});
+
+test('clip titles', () => {
+  const link = C.buildClipLink('everyone', 'dQw4w9WgXcQ', 83, 120, '  The best part!  ');
+  assert.equal(link, 'https://youclip.ca/watch/dQw4w9WgXcQ?start=83&end=120&title=The+best+part%21');
+  assert.deepEqual(C.parseWebClipUrl(link), { videoId: 'dQw4w9WgXcQ', start: 83, end: 120, title: 'The best part!' });
+
+  // Any language and emoji survive the round trip.
+  for (const title of ['Melhor momento 😂', 'أفضل جزء', '最高の瞬間', 'a & b = c?#d']) {
+    assert.equal(C.parseWebClipUrl(C.buildClipLink('everyone', 'dQw4w9WgXcQ', 1, 5, title)).title, title);
+  }
+
+  // No title: nothing added, and parsed clips have no title key.
+  for (const empty of ['', '   ', null, undefined]) {
+    assert.equal(C.buildClipLink('everyone', 'dQw4w9WgXcQ', 1, 5, empty), 'https://youclip.ca/watch/dQw4w9WgXcQ?start=1&end=5');
+  }
+  assert.deepEqual(C.parseWebClipUrl('https://youclip.ca/watch/dQw4w9WgXcQ?start=1&end=5&title=%20%20'), { videoId: 'dQw4w9WgXcQ', start: 1, end: 5 });
+
+  // YouTube links don't carry the title.
+  assert.equal(C.buildClipLink('youtube', 'dQw4w9WgXcQ', 1, 5, 'Hi'), C.buildClipUrl('dQw4w9WgXcQ', 1, 5));
+
+  // A title on an invalid clip doesn't make it valid.
+  assert.equal(C.parseWebClipUrl('https://youclip.ca/watch/dQw4w9WgXcQ?start=9&end=5&title=x'), null);
+  // The query form (?v=…) keeps its title too.
+  assert.equal(C.parseWebClipUrl('https://youclip.ca/?v=dQw4w9WgXcQ&t=1s&end=5&title=Hey').title, 'Hey');
+});
+
+test('cleanClipTitle keeps titles to one tidy line', () => {
+  assert.equal(C.cleanClipTitle('  two\nlines\tand  spaces '), 'two lines and spaces');
+  assert.equal(C.cleanClipTitle('evil‮override⁦isolate\u0000null'), 'evil override isolate null');
+  assert.equal(C.cleanClipTitle('emoji 👨‍👩‍👧 kept'), 'emoji 👨‍👩‍👧 kept', 'joiners inside emoji stay');
+  assert.equal(C.cleanClipTitle('x'.repeat(250)).length, C.MAX_TITLE_LENGTH);
+  assert.equal(Array.from(C.cleanClipTitle('😀'.repeat(150))).length, C.MAX_TITLE_LENGTH, 'counts characters, not UTF-16 units');
+  assert.equal(C.cleanClipTitle(null), '');
+  // A long title in a link is cut to the limit when read.
+  const long = C.parseWebClipUrl(`https://youclip.ca/watch/dQw4w9WgXcQ?start=1&end=5&title=${'y'.repeat(300)}`);
+  assert.equal(long.title.length, C.MAX_TITLE_LENGTH);
 });
 
 test('pickLocale', () => {

@@ -8,7 +8,7 @@ so they aren't entered here.
 
 ## Package tab
 
-Upload `dist/clip-share-<version>.zip` (build it with `node tools/package.mjs`).
+Upload `dist/youclip-<version>.zip` (build it with `node tools/package.mjs`).
 
 ---
 
@@ -28,23 +28,24 @@ Share the exact part of a YouTube video you mean, not the whole thing.
 
 Click the new Clip button under any video. A clip panel opens right next to the video, where you pick a start and end time. Type the times, or press "Now" at the moment you want. The panel stays open while the video plays, so you can mark the start and the end as you watch. Then copy the link and send it anywhere.
 
-When someone with Clip Share opens your link:
+When someone with YouClip opens your link:
 • the video starts at your start time
 • grey dots on the progress bar show where the clip begins and ends
 • the rest of the page dims, so the clip gets the spotlight
 • the video pauses at your end time, with buttons to replay the clip or keep watching
 
-Sending it to someone who doesn't have Clip Share, or who'll open it on a phone? Pick "Link for everyone". It opens a simple page that plays just that part of the video, on any device, with nothing to install.
+Sending it to someone who doesn't have YouClip, or who'll open it on a phone? Pick "Link for everyone". It opens a simple page that plays just that part of the video, on any device, with nothing to install.
 
 Also:
+• Give your clip a title (optional). It shows above the video on the clip's page
 • Preview the clip before you share it
 • The toolbar button opens the same picker
 • Works in YouTube's light and dark themes
 • Available in 19 languages
 
-Private by design: Clip Share doesn't collect or send any data. The extension only runs on youtube.com, and everything happens in your browser.
+Private by design: YouClip doesn't collect or send any data. The extension only runs on youtube.com, and everything happens in your browser.
 
-Clip Share is not affiliated with or endorsed by YouTube or Google.
+YouClip is not affiliated with or endorsed by YouTube or Google.
 ```
 
 ### Description — Português (Brasil)
@@ -54,23 +55,24 @@ Compartilhe exatamente o trecho de um vídeo do YouTube que você quer mostrar, 
 
 Clique no novo botão Clipe embaixo de qualquer vídeo. Um painel de clipe abre ao lado do vídeo, onde você escolhe o início e o fim. Digite os tempos ou clique em "Agora" no momento que você quiser. O painel fica aberto enquanto o vídeo toca, então dá para marcar o início e o fim assistindo. Depois é só copiar o link e mandar para quem quiser.
 
-Quando alguém com o Clip Share abre o seu link:
+Quando alguém com o YouClip abre o seu link:
 • o vídeo começa no tempo de início escolhido
 • pontos cinza na barra de progresso mostram onde o clipe começa e termina
 • o resto da página escurece, deixando o clipe em destaque
 • o vídeo pausa no tempo final, com botões para repetir o clipe ou continuar assistindo
 
-Vai mandar para alguém que não tem o Clip Share, ou que vai abrir no celular? Escolha "Link para todos". Ele abre uma página simples que reproduz só aquele trecho do vídeo, em qualquer aparelho, sem precisar instalar nada.
+Vai mandar para alguém que não tem o YouClip, ou que vai abrir no celular? Escolha "Link para todos". Ele abre uma página simples que reproduz só aquele trecho do vídeo, em qualquer aparelho, sem precisar instalar nada.
 
 Também:
+• Dê um título ao seu clipe (opcional). Ele aparece acima do vídeo na página do clipe
 • Veja uma prévia do clipe antes de compartilhar
 • O botão na barra de ferramentas abre o mesmo seletor
 • Funciona nos temas claro e escuro do YouTube
 • Disponível em 19 idiomas
 
-Privacidade em primeiro lugar: o Clip Share não coleta nem envia nenhum dado. A extensão só funciona no youtube.com e tudo acontece no seu navegador.
+Privacidade em primeiro lugar: o YouClip não coleta nem envia nenhum dado. A extensão só funciona no youtube.com e tudo acontece no seu navegador.
 
-O Clip Share não é afiliado nem endossado pelo YouTube ou pelo Google.
+O YouClip não é afiliado nem endossado pelo YouTube ou pelo Google.
 ```
 
 ### Graphics
@@ -93,7 +95,7 @@ O Clip Share não é afiliado nem endossado pelo YouTube ou pelo Google.
 **Single purpose**
 
 ```
-Clip Share lets people share a link to a specific part of a YouTube video (a start and an end time), and plays those links so the video starts at the start time and pauses at the end time.
+YouClip lets people share a link to a specific part of a YouTube video (a start and an end time), and plays those links so the video starts at the start time and pauses at the end time.
 ```
 
 **Host permission justification** (for `https://www.youtube.com/*`)
@@ -105,7 +107,7 @@ The extension's content script runs only on www.youtube.com. It adds a Clip butt
 **`storage` justification**
 
 ```
-Remembers which kind of clip link the user prefers: a link to the Clip Share web player or a regular YouTube link. Nothing else is stored.
+Remembers which kind of clip link the user prefers: a link to the YouClip web player or a regular YouTube link. Nothing else is stored.
 ```
 
 **Are you using remote code?** No, I am not using remote code.

@@ -1,14 +1,18 @@
 // Cloudflare Workers settings for the web player at https://youclip.ca/.
-// It only serves the static files in web/; there is no server code.
+// It serves the static files in web/. Clip pages (/watch/…) go through worker/index.mjs first,
+// which fills in the link preview (clip title and video thumbnail) for chat apps.
 // Cloudflare's GitHub integration (Workers Builds) runs `node tools/build-site.mjs` and then
 // `npx wrangler deploy` on every push to main. The Worker in the dashboard must be named "youtubeclip".
 {
   "name": "youtubeclip",
+  "main": "worker/index.mjs",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./web",
+    "binding": "ASSETS",
     // Clip links (/watch/<video id>?start=…&end=…) aren't files: answer them with index.html,
     // and player.js reads the clip from the address.
-    "not_found_handling": "single-page-application"
+    "not_found_handling": "single-page-application",
+    "run_worker_first": ["/watch/*"]
   }
 }

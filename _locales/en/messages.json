@@ -4,8 +4,8 @@
     "description": "BCP 47 code of this translation (e.g. pt-BR). Not shown to users; do not translate."
   },
   "extName": {
-    "message": "Clip Share for YouTube",
-    "description": "Extension name in the Chrome Web Store and extensions page. Keep \"Clip Share\" and \"YouTube\" as is."
+    "message": "YouClip for YouTube",
+    "description": "Extension name in the Chrome Web Store and extensions page. Keep \"YouClip\" and \"YouTube\" as is."
   },
   "extDescription": {
     "message": "Share YouTube links that start and stop at the exact moments you pick.",
@@ -70,6 +70,14 @@
   "clipLinkLabel": {
     "message": "Clip link",
     "description": "Screen-reader label of the field that shows the clip link."
+  },
+  "clipTitle": {
+    "message": "Clip title",
+    "description": "Label above the optional clip title field. The title is shown on the clip’s web page (Link for everyone)."
+  },
+  "clipTitlePlaceholder": {
+    "message": "Optional",
+    "description": "Placeholder inside the clip title field, saying it can be left empty."
   },
   "clipLength": {
     "message": "$LENGTH$ long",
@@ -166,7 +174,7 @@
     "description": "Popup message when the current tab is not a YouTube video."
   },
   "msgReloadTab": {
-    "message": "Reload this YouTube tab so Clip Share can connect to it.",
+    "message": "Reload this YouTube tab so YouClip can connect to it.",
     "description": "Popup message when the YouTube tab was open before the extension was installed or updated."
   },
   "msgLostConnection": {
@@ -179,14 +187,14 @@
   },
   "linkEveryone": {
     "message": "Link for everyone",
-    "description": "Option: a link to the Clip Share web page, which plays the clip for anyone without the extension."
+    "description": "Option: a link to the YouClip web page (youclip.ca), which plays the clip for anyone without the extension."
   },
   "linkYouTube": {
     "message": "YouTube link",
     "description": "Option: a regular youtube.com link (stops at the end time only for people with the extension)."
   },
   "everyoneHint": {
-    "message": "Opens a page that plays just this clip, on any device, even without Clip Share.",
+    "message": "Opens a page that plays just this clip, on any device, even without YouClip.",
     "description": "Note under the picker when \"Link for everyone\" is selected."
   },
   "watchOnYouTube": {

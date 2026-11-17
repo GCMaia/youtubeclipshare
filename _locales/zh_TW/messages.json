@@ -3,7 +3,7 @@
     "message": "zh-TW"
   },
   "extName": {
-    "message": "Clip Share for YouTube"
+    "message": "YouClip for YouTube"
   },
   "extDescription": {
     "message": "分享會在你選定的時間點開始並停止的 YouTube 連結。"
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "片段連結"
+  },
+  "clipTitle": {
+    "message": "片段標題"
+  },
+  "clipTitlePlaceholder": {
+    "message": "選填"
   },
   "clipLength": {
     "message": "長度：$LENGTH$",
@@ -132,7 +138,7 @@
     "message": "開啟 YouTube 影片即可分享其中的片段。"
   },
   "msgReloadTab": {
-    "message": "請重新載入這個 YouTube 分頁，讓 Clip Share 能夠連線。"
+    "message": "請重新載入這個 YouTube 分頁，讓 YouClip 能夠連線。"
   },
   "msgLostConnection": {
     "message": "與 YouTube 分頁的連線已中斷。請重新載入分頁後再試一次。"
@@ -147,7 +153,7 @@
     "message": "YouTube 連結"
   },
   "everyoneHint": {
-    "message": "開啟只播放這個片段的網頁，任何裝置都能觀看，不需安裝 Clip Share。"
+    "message": "開啟只播放這個片段的網頁，任何裝置都能觀看，不需安裝 YouClip。"
   },
   "watchOnYouTube": {
     "message": "在 YouTube 上觀看"

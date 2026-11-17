@@ -3,7 +3,7 @@
     "message": "pl"
   },
   "extName": {
-    "message": "Clip Share dla YouTube"
+    "message": "YouClip dla YouTube"
   },
   "extDescription": {
     "message": "Udostępniaj linki do YouTube, które zaczynają się i kończą dokładnie w wybranych momentach."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Link do klipu"
+  },
+  "clipTitle": {
+    "message": "Tytuł klipu"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Opcjonalnie"
   },
   "clipLength": {
     "message": "Długość: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Otwórz film na YouTube, aby udostępnić jego klip."
   },
   "msgReloadTab": {
-    "message": "Odśwież tę kartę YouTube, aby Clip Share mógł się z nią połączyć."
+    "message": "Odśwież tę kartę YouTube, aby YouClip mógł się z nią połączyć."
   },
   "msgLostConnection": {
     "message": "Utracono połączenie z kartą YouTube. Odśwież ją i spróbuj ponownie."
@@ -147,7 +153,7 @@
     "message": "Link do YouTube"
   },
   "everyoneHint": {
-    "message": "Otwiera stronę, która odtwarza tylko ten klip – na każdym urządzeniu, nawet bez Clip Share."
+    "message": "Otwiera stronę, która odtwarza tylko ten klip – na każdym urządzeniu, nawet bez YouClip."
   },
   "watchOnYouTube": {
     "message": "Obejrzyj na YouTube"

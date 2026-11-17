@@ -3,7 +3,7 @@
     "message": "tr"
   },
   "extName": {
-    "message": "YouTube için Clip Share"
+    "message": "YouTube için YouClip"
   },
   "extDescription": {
     "message": "Seçtiğiniz anlarda başlayıp biten YouTube bağlantıları paylaşın."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Klip bağlantısı"
+  },
+  "clipTitle": {
+    "message": "Klip başlığı"
+  },
+  "clipTitlePlaceholder": {
+    "message": "İsteğe bağlı"
   },
   "clipLength": {
     "message": "Süre: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Klip paylaşmak için bir YouTube videosu açın."
   },
   "msgReloadTab": {
-    "message": "Clip Share’in bağlanabilmesi için bu YouTube sekmesini yeniden yükleyin."
+    "message": "YouClip’in bağlanabilmesi için bu YouTube sekmesini yeniden yükleyin."
   },
   "msgLostConnection": {
     "message": "YouTube sekmesiyle bağlantı kesildi. Sekmeyi yeniden yükleyip tekrar deneyin."
@@ -147,7 +153,7 @@
     "message": "YouTube bağlantısı"
   },
   "everyoneHint": {
-    "message": "Yalnızca bu klibi oynatan bir sayfa açar; Clip Share olmadan da her cihazda çalışır."
+    "message": "Yalnızca bu klibi oynatan bir sayfa açar; YouClip olmadan da her cihazda çalışır."
   },
   "watchOnYouTube": {
     "message": "YouTube’da izle"

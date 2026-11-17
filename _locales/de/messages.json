@@ -3,7 +3,7 @@
     "message": "de"
   },
   "extName": {
-    "message": "Clip Share für YouTube"
+    "message": "YouClip für YouTube"
   },
   "extDescription": {
     "message": "Teile YouTube-Links, die genau an den von dir gewählten Stellen beginnen und enden."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Clip-Link"
+  },
+  "clipTitle": {
+    "message": "Clip-Titel"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Optional"
   },
   "clipLength": {
     "message": "Länge: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Öffne ein YouTube-Video, um einen Clip daraus zu teilen."
   },
   "msgReloadTab": {
-    "message": "Lade diesen YouTube-Tab neu, damit Clip Share sich verbinden kann."
+    "message": "Lade diesen YouTube-Tab neu, damit YouClip sich verbinden kann."
   },
   "msgLostConnection": {
     "message": "Die Verbindung zum YouTube-Tab wurde unterbrochen. Lade ihn neu und versuche es noch einmal."
@@ -147,7 +153,7 @@
     "message": "YouTube-Link"
   },
   "everyoneHint": {
-    "message": "Öffnet eine Seite, die nur diesen Clip abspielt – auf jedem Gerät, auch ohne Clip Share."
+    "message": "Öffnet eine Seite, die nur diesen Clip abspielt – auf jedem Gerät, auch ohne YouClip."
   },
   "watchOnYouTube": {
     "message": "Auf YouTube ansehen"

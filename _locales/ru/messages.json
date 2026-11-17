@@ -3,7 +3,7 @@
     "message": "ru"
   },
   "extName": {
-    "message": "Clip Share для YouTube"
+    "message": "YouClip для YouTube"
   },
   "extDescription": {
     "message": "Делитесь ссылками на YouTube, которые начинаются и заканчиваются точно в выбранные моменты."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Ссылка на фрагмент"
+  },
+  "clipTitle": {
+    "message": "Название фрагмента"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Необязательно"
   },
   "clipLength": {
     "message": "Длительность: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Откройте видео на YouTube, чтобы поделиться его фрагментом."
   },
   "msgReloadTab": {
-    "message": "Перезагрузите эту вкладку YouTube, чтобы Clip Share мог к ней подключиться."
+    "message": "Перезагрузите эту вкладку YouTube, чтобы YouClip мог к ней подключиться."
   },
   "msgLostConnection": {
     "message": "Соединение с вкладкой YouTube потеряно. Перезагрузите её и попробуйте снова."
@@ -147,7 +153,7 @@
     "message": "Ссылка на YouTube"
   },
   "everyoneHint": {
-    "message": "Открывает страницу, которая воспроизводит только этот фрагмент — на любом устройстве, даже без Clip Share."
+    "message": "Открывает страницу, которая воспроизводит только этот фрагмент — на любом устройстве, даже без YouClip."
   },
   "watchOnYouTube": {
     "message": "Смотреть на YouTube"

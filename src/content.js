@@ -1,10 +1,10 @@
 /*
- * Clip Share for YouTube — content script (runs on www.youtube.com).
+ * YouClip for YouTube — content script (runs on www.youtube.com).
  *
  * 1. Viewer side: when the URL is a clip link (…&t=83s&end=120), make sure playback
  *    starts at `t` and pause the video when it reaches `end`.
  * 2. Sharer side: add a "Clip" button left of the Like button. It opens a pop-over where the
- *    user picks start/end times and copies the clip link.
+ *    user picks start/end times, optionally a clip title, and copies the clip link.
  * 3. Answer messages from the toolbar popup, which offers the same picker.
  *
  * YouTube enforces Trusted Types, so all UI is built with DOM APIs (no innerHTML).
@@ -497,24 +497,27 @@
   });
 
   // What the user typed, kept while the picker closes/reopens and shared with the
-  // toolbar popup. Raw strings: { videoId, start, end }.
+  // toolbar popup. Raw strings: { videoId, start, end, title }.
   let draft = null;
 
-  function setDraft(videoId, start, end) {
-    draft = videoId ? { videoId, start, end } : null;
+  function setDraft(videoId, start, end, title = '') {
+    draft = videoId ? { videoId, start, end, title: String(title ?? '') } : null;
   }
 
-  /** Initial picker values for a video: last draft > clip being watched > current time. */
+  /**
+   * Initial picker values for a video, { start, end, title }:
+   * last draft > clip being watched > current time (and no title).
+   */
   function initialRange(videoId, isCurrentVideo) {
-    if (draft && draft.videoId === videoId) return { start: draft.start, end: draft.end };
+    if (draft && draft.videoId === videoId) return { start: draft.start, end: draft.end, title: draft.title };
     if (clip && clip.videoId === videoId) {
-      return { start: C.formatTime(clip.start), end: C.formatTime(clip.end) };
+      return { start: C.formatTime(clip.start), end: C.formatTime(clip.end), title: '' };
     }
     const info = isCurrentVideo ? playbackInfo() : null;
     const start = info ? Math.floor(info.currentTime) : 0;
     let end = start + DEFAULT_CLIP_LENGTH;
     if (info?.duration) end = Math.min(end, Math.floor(info.duration));
-    return { start: C.formatTime(start), end: C.formatTime(end) };
+    return { start: C.formatTime(start), end: C.formatTime(end), title: '' };
   }
 
   function nowTime(kind) {
@@ -595,6 +598,17 @@
       everyone: h('button', { class: 'ytcs-segment', type: 'button', onclick: () => chooseLinkType('everyone') }, t('linkEveryone')),
       youtube: h('button', { class: 'ytcs-segment', type: 'button', onclick: () => chooseLinkType('youtube') }, t('linkYouTube')),
     };
+    // Optional. It goes in "Link for everyone" links and shows on the clip's web page, so
+    // the field is hidden while "YouTube link" is selected.
+    const titleInput = h('input', {
+      class: 'ytcs-input ytcs-title-input',
+      type: 'text',
+      dir: 'auto',
+      maxlength: C.MAX_TITLE_LENGTH,
+      autocomplete: 'off',
+      placeholder: t('clipTitlePlaceholder'),
+    });
+    const titleField = h('label', { class: 'ytcs-field ytcs-title-field' }, h('span', { class: 'ytcs-label' }, t('clipTitle')), titleInput);
 
     const field = (label, input, nowBtn) =>
       h('div', { class: 'ytcs-field' }, h('span', { class: 'ytcs-label' }, label), h('div', { class: 'ytcs-time' }, input, nowBtn));
@@ -623,6 +637,7 @@
         typeButtons.everyone,
         typeButtons.youtube
       ),
+      titleField,
       h('div', { class: 'ytcs-link-row' }, linkInput, copyBtn),
       errorEl,
       hintEl
@@ -640,6 +655,7 @@
       const range = initialRange(state.videoId, true);
       startInput.value = range.start;
       endInput.value = range.end;
+      titleInput.value = range.title;
       update();
     }
 
@@ -653,19 +669,28 @@
       startInput.classList.toggle('ytcs-invalid', start == null);
       endInput.classList.toggle('ytcs-invalid', end == null || (start != null && end <= start));
       errorEl.textContent = error ? t(error.key, error.subs) : '';
-      state.link = error ? '' : C.buildClipLink(linkType, state.videoId, start, end);
+      state.link = error ? '' : C.buildClipLink(linkType, state.videoId, start, end, titleInput.value);
       linkInput.value = state.link;
       lengthEl.textContent = error ? '' : t('clipLength', [C.formatTime(end - start)]);
       copyBtn.disabled = previewBtn.disabled = !!error;
       cancelPreviewBtn.hidden = !isPreviewing(state.videoId);
       for (const [type, button] of Object.entries(typeButtons)) button.setAttribute('aria-pressed', String(type === linkType));
+      titleField.hidden = linkType === 'youtube';
       hintEl.textContent = linkType === 'youtube' ? t('stopHint') : t('everyoneHint');
     }
 
     function onEdited() {
-      setDraft(state.videoId, startInput.value, endInput.value);
+      setDraft(state.videoId, startInput.value, endInput.value, titleInput.value);
       update();
     }
+
+    titleInput.addEventListener('input', onEdited);
+    titleInput.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && state.link) {
+        e.preventDefault();
+        copyBtn.click();
+      }
+    });
 
     for (const input of [startInput, endInput]) {
       input.addEventListener('input', onEdited);
@@ -885,7 +910,7 @@
         sendResponse({ ok: cancelPreview() });
         break;
       case 'ytcs:setDraft':
-        if (msg.videoId && msg.videoId === watchVideoId()) setDraft(msg.videoId, msg.start, msg.end);
+        if (msg.videoId && msg.videoId === watchVideoId()) setDraft(msg.videoId, msg.start, msg.end, msg.title);
         sendResponse({ ok: true });
         break;
       case 'ytcs:preview':

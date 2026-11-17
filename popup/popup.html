@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Clip Share</title>
+    <title>YouClip</title>
     <link rel="stylesheet" href="popup.css" />
   </head>
   <!-- Text comes from _locales/ (data-i18n* attributes, filled in by popup.js); the English here is a fallback. -->
@@ -42,6 +42,12 @@
         <button class="segment" type="button" data-link-type="youtube" data-i18n="linkYouTube">YouTube link</button>
       </div>
 
+      <!-- Optional; only used by "Link for everyone" links, so popup.js hides it for YouTube links. -->
+      <div id="title-field" class="field title-field">
+        <label for="clip-title" data-i18n="clipTitle">Clip title</label>
+        <input id="clip-title" class="input" type="text" dir="auto" maxlength="100" autocomplete="off" data-i18n-placeholder="clipTitlePlaceholder" placeholder="Optional" />
+      </div>
+
       <input id="link" class="input link" type="text" dir="ltr" readonly spellcheck="false" data-i18n-aria-label="clipLinkLabel" aria-label="Clip link" />
       <p id="error" class="error" role="status" aria-live="polite"></p>
 
@@ -54,7 +60,7 @@
       <p id="tip" class="hint">Tip: leave this open while the video plays and press <b>Now</b> at the start and end moments.</p>
     </main>
 
-    <footer id="footer-hint" class="footer">Opens a page that plays just this clip, on any device, even without Clip Share.</footer>
+    <footer id="footer-hint" class="footer">Opens a page that plays just this clip, on any device, even without YouClip.</footer>
 
     <script src="../src/clip-utils.js"></script>
     <script src="popup.js"></script>

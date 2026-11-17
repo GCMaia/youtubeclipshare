@@ -3,7 +3,7 @@
     "message": "nl"
   },
   "extName": {
-    "message": "Clip Share voor YouTube"
+    "message": "YouClip voor YouTube"
   },
   "extDescription": {
     "message": "Deel YouTube-links die precies beginnen en stoppen op de momenten die jij kiest."
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "Cliplink"
+  },
+  "clipTitle": {
+    "message": "Cliptitel"
+  },
+  "clipTitlePlaceholder": {
+    "message": "Optioneel"
   },
   "clipLength": {
     "message": "Duur: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "Open een YouTube-video om er een clip van te delen."
   },
   "msgReloadTab": {
-    "message": "Laad dit YouTube-tabblad opnieuw zodat Clip Share verbinding kan maken."
+    "message": "Laad dit YouTube-tabblad opnieuw zodat YouClip verbinding kan maken."
   },
   "msgLostConnection": {
     "message": "De verbinding met het YouTube-tabblad is verbroken. Laad het opnieuw en probeer het nog eens."
@@ -147,7 +153,7 @@
     "message": "YouTube-link"
   },
   "everyoneHint": {
-    "message": "Opent een pagina die alleen deze clip afspeelt, op elk apparaat, ook zonder Clip Share."
+    "message": "Opent een pagina die alleen deze clip afspeelt, op elk apparaat, ook zonder YouClip."
   },
   "watchOnYouTube": {
     "message": "Bekijken op YouTube"

@@ -1,7 +1,11 @@
 /*
- * Clip Share web player: plays just the shared part of a YouTube video, for anyone and
- * on any device, without the extension. Link format: /watch/<video id>?start=<s>&end=<s>
- * (_redirects sends every /watch/… address to this page).
+ * YouClip web player (youclip.ca): plays just the shared part of a YouTube video, for anyone
+ * and on any device, without the extension.
+ * Link format: /watch/<video id>?start=<s>&end=<s>[&title=<clip title>]
+ * (_redirects and wrangler.jsonc send every /watch/… address to this page).
+ *
+ * Under the video: the clip's range and length, the clip title (when the link has one),
+ * the video's own name, and a link to the clip on YouTube.
  *
  * It uses YouTube's official IFrame Player API with the privacy-enhanced
  * youtube-nocookie.com player. The clip lives entirely in the link, so nothing is stored.
@@ -10,7 +14,7 @@
   'use strict';
 
   const C = window.YTClip;
-  const STRINGS = window.CLIP_SHARE_STRINGS;
+  const STRINGS = window.YOUCLIP_STRINGS;
   const $ = (id) => document.getElementById(id);
 
   const locale = C.pickLocale(
@@ -42,8 +46,18 @@
   const youtubeUrl = C.buildClipUrl(clip.videoId, clip.start, clip.end);
   const range = `${C.formatTime(clip.start)} – ${C.formatTime(clip.end)}`;
   $('clip-label').textContent = t('badgeLabel', [range]);
+  $('clip-length').textContent = t('clipLength', [C.formatTime(clip.end - clip.start)]);
   $('yt-link').href = youtubeUrl;
   $('yt-link').textContent = t('watchOnYouTube');
+
+  // The sharer's own title for the clip, if they gave one. It's text from the link, so it's
+  // only ever set as textContent (never as HTML).
+  if (clip.title) {
+    $('clip-title').textContent = clip.title;
+    $('clip-title').hidden = false;
+    $('details').classList.add('has-clip-title');
+    document.title = `${clip.title} · YouClip`;
+  }
 
   let player = null;
   let clipMode = true; // false after "Keep watching": the video plays on past the clip
@@ -87,11 +101,12 @@
     showOverlay(t('clipEnded'), range, [button(t('replayClip'), true, replay), button(t('keepWatching'), false, keepWatching)]);
   }
 
+  /** The video's own name, from YouTube's player, under the clip title. */
   function showTitle() {
     const title = player?.getVideoData?.()?.title;
     if (!title) return;
     $('title').textContent = title;
-    document.title = `${title} · Clip Share`;
+    if (!clip.title) document.title = `${title} · YouClip`;
   }
 
   window.onYouTubeIframeAPIReady = () => {

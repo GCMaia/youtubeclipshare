@@ -3,7 +3,7 @@
     "message": "hi"
   },
   "extName": {
-    "message": "YouTube के लिए Clip Share"
+    "message": "YouTube के लिए YouClip"
   },
   "extDescription": {
     "message": "ऐसे YouTube लिंक शेयर करें जो ठीक आपके चुने हुए पलों पर शुरू और खत्म हों।"
@@ -52,6 +52,12 @@
   },
   "clipLinkLabel": {
     "message": "क्लिप का लिंक"
+  },
+  "clipTitle": {
+    "message": "क्लिप का शीर्षक"
+  },
+  "clipTitlePlaceholder": {
+    "message": "वैकल्पिक"
   },
   "clipLength": {
     "message": "अवधि: $LENGTH$",
@@ -132,7 +138,7 @@
     "message": "क्लिप शेयर करने के लिए YouTube का कोई वीडियो खोलें।"
   },
   "msgReloadTab": {
-    "message": "इस YouTube टैब को रीलोड करें ताकि Clip Share उससे कनेक्ट हो सके।"
+    "message": "इस YouTube टैब को रीलोड करें ताकि YouClip उससे कनेक्ट हो सके।"
   },
   "msgLostConnection": {
     "message": "YouTube टैब से कनेक्शन टूट गया। टैब रीलोड करके फिर से कोशिश करें।"
@@ -147,7 +153,7 @@
     "message": "YouTube लिंक"
   },
   "everyoneHint": {
-    "message": "एक पेज खोलता है जो सिर्फ़ यह क्लिप चलाता है, किसी भी डिवाइस पर, Clip Share के बिना भी।"
+    "message": "एक पेज खोलता है जो सिर्फ़ यह क्लिप चलाता है, किसी भी डिवाइस पर, YouClip के बिना भी।"
   },
   "watchOnYouTube": {
     "message": "YouTube पर देखें"

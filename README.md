@@ -1,4 +1,4 @@
-# Clip Share for YouTube
+# YouClip for YouTube
 
 A Chrome/Chromium extension (Manifest V3) for sharing a specific part of a YouTube video.
 Pick a start and an end time, copy the link, and whoever opens it sees the video start at
@@ -23,6 +23,9 @@ side column, the panel opens under the button instead. It contains:
 - **Now**: fills in the video's current time.
 - **Preview**: plays the clip, so you can check the cut. While a preview runs, a **Cancel preview**
   button appears. It stops the preview and puts the video back where it was, playing or paused.
+- **Clip title** (optional): a name for the clip, up to 100 characters. It goes in "Link for everyone"
+  links and shows on the clip's page above the video's own name. The field is hidden while
+  **YouTube link** is selected, because YouTube links don't carry a title.
 - **Copy**: copies the clip link.
 
 The panel doesn't cover the video and stays open while you watch, seek or pause. Press **Now**
@@ -55,24 +58,38 @@ https://www.youtube.com/watch?v=VIDEO_ID&t=83s&end=120
 
 The picker can copy two kinds of link, and the extension remembers which one you chose last:
 
-- **Link for everyone** (the default): `https://youclip.ca/watch/VIDEO_ID?start=83&end=120`.
-  It opens a small dark page from `web/` that plays just the clip with YouTube's embedded player.
-  When the clip ends, it shows **Replay clip** and **Keep watching**. It works in any browser
-  and on phones, with no extension.
+- **Link for everyone** (the default): `https://youclip.ca/watch/VIDEO_ID?start=83&end=120`, plus
+  `&title=…` when the clip has a title. It opens a small dark page from `web/` that plays just the
+  clip with YouTube's embedded player. Under the video it shows the clip's range and length, the
+  clip title (if any), the video's name and a **Watch on YouTube** link. When the clip ends, it
+  shows **Replay clip** and **Keep watching**. It works in any browser and on phones, with no
+  extension.
 - **YouTube link**: the youtube.com link described above.
 
 The address is `WEB_PLAYER_URL` in `src/clip-utils.js`. Setting it to `''` hides the switch, and
 only YouTube links are copied.
 
-The clip is stored in the link itself, so there's no server or database, and links never expire.
-Two limits come from YouTube: videos whose owners turned off embedding can't play on the page
-(it shows a "Watch on YouTube" button instead), and chat apps show a generic preview, without the
-video's thumbnail.
+The clip is stored in the link itself, so there's no database, and links never expire. Videos whose
+owners turned off embedding can't play on the page (it shows a "Watch on YouTube" button instead).
 
-**How youclip.ca is hosted.** `web/` is a plain static site, served by a Cloudflare Worker named
+**Link previews.** When a clip link is pasted in WhatsApp, Discord, iMessage, Slack, X and so on, the
+preview shows the clip title (or the video's name if there's none), the clip's range and length, the
+video's name and channel, and the video's thumbnail. Chat apps read this from tags in the page
+without running its JavaScript, so `worker/index.mjs` fills them in on Cloudflare before the page is
+sent. It asks YouTube's public oEmbed endpoint for the video's title and checks whether the
+thumbnail exists in HD. It sends only the video ID, and both answers are cached for a day. The text
+itself is built in `worker/preview.mjs`. Chat apps cache previews too, so a link pasted before a
+change keeps its old preview.
+
+**How youclip.ca is hosted.** `web/` is a static site, served by a Cloudflare Worker named
 `youtubeclip` (free plan). The Worker is connected to this GitHub repository, so **every push to `main`
 updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to serve the `web/`
-folder and to answer `/watch/…` links with `index.html`.
+folder, and to send `/watch/…` clip pages through `worker/index.mjs`, which adds the link preview
+to `index.html`. The free plan allows 100,000 clip page views a day; files like the player script
+and icons don't count.
+
+To try the Worker on your computer: `npx wrangler dev`, then open
+http://127.0.0.1:8787/watch/dQw4w9WgXcQ?start=43&end=50.
 
 Setting it up (one time):
 
@@ -90,7 +107,8 @@ Setting it up (one time):
 Leave Web Analytics turned off. The privacy policy says the page has no analytics.
 
 Shared links use `youclip.ca`, not the `workers.dev` address, so you could move to another host
-later without breaking links already sent. Any static host that supports a `_redirects` file works.
+later without breaking links already sent. Any static host that supports a `_redirects` file can
+serve the player; only the link previews need the Worker.
 
 The build command regenerates the copies in `web/` on every deploy. Still run
 `node tools/build-site.mjs` after changing `src/clip-utils.js`, `_locales/` or `icons/`, because the
@@ -116,7 +134,7 @@ To try another language, start Chrome with a different language. On Windows:
 ## Publishing
 
 1. Raise `version` in `manifest.json`. Each upload needs a higher version than the last one.
-2. Run `node --test`, then `node tools/package.mjs`. This creates `dist/clip-share-<version>.zip`
+2. Run `node --test`, then `node tools/package.mjs`. This creates `dist/youclip-<version>.zip`
    with only the files the extension needs.
 3. Upload the zip in the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
    `store/listing.md` has the text for every dashboard field. `store/privacy-policy.md` is the
@@ -137,6 +155,7 @@ To try another language, start Chrome with a different language. On Windows:
 | `web/` | The web player for "Link for everyone" links: a static site to upload to any static host. `clip-utils.js`, `strings.js` and the icons in it are generated. |
 | `tools/build-site.mjs` | Updates the generated files in `web/` (`node tools/build-site.mjs`). |
 | `wrangler.jsonc` | Cloudflare settings for hosting `web/` at youclip.ca. |
+| `worker/` | The Cloudflare Worker that adds link previews (title, thumbnail) to clip pages. |
 | `store/` | Store listing text and privacy policy. |
 | `test/` | Unit tests and translation checks (`node --test`). |
 

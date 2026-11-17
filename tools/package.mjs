@@ -1,4 +1,4 @@
-// Builds dist/clip-share-<version>.zip for uploading to the Chrome Web Store.
+// Builds dist/youclip-<version>.zip for uploading to the Chrome Web Store.
 // Only the files the extension needs go in (no tests, tools or docs).
 // Run with: node tools/package.mjs   (no dependencies)
 import { mkdirSync, readdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
@@ -80,7 +80,7 @@ const entries = INCLUDE.flatMap((item) => [...walk(join(ROOT, item))]).map((file
 }));
 
 const outDir = join(ROOT, 'dist');
-const outFile = join(outDir, `clip-share-${manifest.version}.zip`);
+const outFile = join(outDir, `youclip-${manifest.version}.zip`);
 mkdirSync(outDir, { recursive: true });
 writeFileSync(outFile, zip(entries));
 console.log(`${relative(ROOT, outFile)}  (${entries.length} files, version ${manifest.version})`);
