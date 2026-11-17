@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "ar"
+  },
+  "extName": {
+    "message": "Clip Share لـ YouTube"
+  },
+  "extDescription": {
+    "message": "شارك روابط YouTube تبدأ وتنتهي في اللحظات التي تختارها بالضبط."
+  },
+  "actionTitle": {
+    "message": "مشاركة مقطع من هذا الفيديو"
+  },
+  "shareClip": {
+    "message": "مشاركة مقطع"
+  },
+  "start": {
+    "message": "البداية"
+  },
+  "end": {
+    "message": "النهاية"
+  },
+  "startTimeLabel": {
+    "message": "وقت بداية المقطع"
+  },
+  "endTimeLabel": {
+    "message": "وقت نهاية المقطع"
+  },
+  "now": {
+    "message": "الآن"
+  },
+  "nowTooltip": {
+    "message": "استخدام الوقت الحالي للفيديو"
+  },
+  "preview": {
+    "message": "معاينة"
+  },
+  "previewTooltip": {
+    "message": "تشغيل المقطع للتحقق منه"
+  },
+  "copy": {
+    "message": "نسخ"
+  },
+  "copyClipLink": {
+    "message": "نسخ رابط المقطع"
+  },
+  "copied": {
+    "message": "تم النسخ!"
+  },
+  "copyFailed": {
+    "message": "تعذّر النسخ"
+  },
+  "clipLinkLabel": {
+    "message": "رابط المقطع"
+  },
+  "clipLength": {
+    "message": "المدة: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "سيتوقف الفيديو عند وقت النهاية المحدد مع خيارات لمتابعة المشاهدة أو إعادة تشغيل المقطع."
+  },
+  "errorStartInvalid": {
+    "message": "أدخل وقت بداية صالحًا، مثل 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "أدخل وقت نهاية صالحًا، مثل 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "يجب أن يكون وقت النهاية بعد وقت البداية."
+  },
+  "errorStartPastVideo": {
+    "message": "وقت البداية يتجاوز مدة الفيديو ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "وقت النهاية يتجاوز مدة الفيديو ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "مقطع $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "هذا الرابط مقطع: سيتوقف الفيديو مؤقتًا عند وقت النهاية"
+  },
+  "badgeCloseTooltip": {
+    "message": "مشاهدة الفيديو بالكامل"
+  },
+  "badgeCloseLabel": {
+    "message": "إيقاف وضع المقطع"
+  },
+  "clipEnded": {
+    "message": "انتهى المقطع"
+  },
+  "replayClip": {
+    "message": "إعادة تشغيل المقطع"
+  },
+  "keepWatching": {
+    "message": "متابعة المشاهدة"
+  },
+  "popupTip": {
+    "message": "نصيحة: اترك هذه النافذة مفتوحة أثناء تشغيل الفيديو واضغط $NOW$ عند لحظتي البداية والنهاية.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "افتح فيديو على YouTube لمشاركة مقطع منه."
+  },
+  "msgReloadTab": {
+    "message": "أعد تحميل علامة تبويب YouTube هذه حتى يتمكن Clip Share من الاتصال بها."
+  },
+  "msgLostConnection": {
+    "message": "انقطع الاتصال بعلامة تبويب YouTube. أعد تحميلها وحاول مرة أخرى."
+  },
+  "linkTypeLabel": {
+    "message": "نوع الرابط"
+  },
+  "linkEveryone": {
+    "message": "رابط للجميع"
+  },
+  "linkYouTube": {
+    "message": "رابط YouTube"
+  },
+  "everyoneHint": {
+    "message": "يفتح صفحة تشغّل هذا المقطع فقط، على أي جهاز، حتى بدون Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "المشاهدة على YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "رابط المقطع هذا غير مكتمل أو تالف. اطلب رابطًا جديدًا من الشخص الذي أرسله."
+  },
+  "siteCantEmbed": {
+    "message": "لا يمكن تشغيل هذا الفيديو هنا."
+  },
+  "clipButton": {
+    "message": "مقطع"
+  },
+  "close": {
+    "message": "إغلاق"
+  },
+  "cancelPreview": {
+    "message": "إلغاء المعاينة"
+  },
+  "cancelPreviewTooltip": {
+    "message": "إيقاف المعاينة والعودة إلى حيث كنت في الفيديو"
+  }
+}

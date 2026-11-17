@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "nl"
+  },
+  "extName": {
+    "message": "Clip Share voor YouTube"
+  },
+  "extDescription": {
+    "message": "Deel YouTube-links die precies beginnen en stoppen op de momenten die jij kiest."
+  },
+  "actionTitle": {
+    "message": "Een clip van deze video delen"
+  },
+  "shareClip": {
+    "message": "Clip delen"
+  },
+  "start": {
+    "message": "Begin"
+  },
+  "end": {
+    "message": "Einde"
+  },
+  "startTimeLabel": {
+    "message": "Begintijd van de clip"
+  },
+  "endTimeLabel": {
+    "message": "Eindtijd van de clip"
+  },
+  "now": {
+    "message": "Nu"
+  },
+  "nowTooltip": {
+    "message": "Huidige videotijd gebruiken"
+  },
+  "preview": {
+    "message": "Voorbeeld"
+  },
+  "previewTooltip": {
+    "message": "Clip afspelen om te controleren"
+  },
+  "copy": {
+    "message": "Kopiëren"
+  },
+  "copyClipLink": {
+    "message": "Cliplink kopiëren"
+  },
+  "copied": {
+    "message": "Gekopieerd!"
+  },
+  "copyFailed": {
+    "message": "Kopiëren mislukt"
+  },
+  "clipLinkLabel": {
+    "message": "Cliplink"
+  },
+  "clipLength": {
+    "message": "Duur: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "De video stopt op de gekozen eindtijd, met de keuze om door te kijken of de clip opnieuw af te spelen."
+  },
+  "errorStartInvalid": {
+    "message": "Voer een geldige begintijd in, zoals 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Voer een geldige eindtijd in, zoals 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "De eindtijd moet na de begintijd liggen."
+  },
+  "errorStartPastVideo": {
+    "message": "De begintijd ligt na het einde van de video ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "De eindtijd ligt na het einde van de video ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Clip $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Deze link is een clip: de video pauzeert op de eindtijd"
+  },
+  "badgeCloseTooltip": {
+    "message": "In plaats daarvan de hele video bekijken"
+  },
+  "badgeCloseLabel": {
+    "message": "Clipmodus uitzetten"
+  },
+  "clipEnded": {
+    "message": "Clip afgelopen"
+  },
+  "replayClip": {
+    "message": "Clip opnieuw afspelen"
+  },
+  "keepWatching": {
+    "message": "Verder kijken"
+  },
+  "popupTip": {
+    "message": "Tip: laat dit venster open terwijl de video speelt en klik op $NOW$ bij het begin- en eindmoment.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Open een YouTube-video om er een clip van te delen."
+  },
+  "msgReloadTab": {
+    "message": "Laad dit YouTube-tabblad opnieuw zodat Clip Share verbinding kan maken."
+  },
+  "msgLostConnection": {
+    "message": "De verbinding met het YouTube-tabblad is verbroken. Laad het opnieuw en probeer het nog eens."
+  },
+  "linkTypeLabel": {
+    "message": "Type link"
+  },
+  "linkEveryone": {
+    "message": "Link voor iedereen"
+  },
+  "linkYouTube": {
+    "message": "YouTube-link"
+  },
+  "everyoneHint": {
+    "message": "Opent een pagina die alleen deze clip afspeelt, op elk apparaat, ook zonder Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Bekijken op YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Deze cliplink is onvolledig of beschadigd. Vraag de afzender om een nieuwe."
+  },
+  "siteCantEmbed": {
+    "message": "Deze video kan hier niet worden afgespeeld."
+  },
+  "clipButton": {
+    "message": "Clip"
+  },
+  "close": {
+    "message": "Sluiten"
+  },
+  "cancelPreview": {
+    "message": "Voorbeeld stoppen"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Voorbeeld stoppen en teruggaan naar waar je was in de video"
+  }
+}

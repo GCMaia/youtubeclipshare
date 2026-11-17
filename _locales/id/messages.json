@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "id"
+  },
+  "extName": {
+    "message": "Clip Share untuk YouTube"
+  },
+  "extDescription": {
+    "message": "Bagikan link YouTube yang mulai dan berhenti tepat di momen yang Anda pilih."
+  },
+  "actionTitle": {
+    "message": "Bagikan klip dari video ini"
+  },
+  "shareClip": {
+    "message": "Bagikan klip"
+  },
+  "start": {
+    "message": "Mulai"
+  },
+  "end": {
+    "message": "Selesai"
+  },
+  "startTimeLabel": {
+    "message": "Waktu mulai klip"
+  },
+  "endTimeLabel": {
+    "message": "Waktu selesai klip"
+  },
+  "now": {
+    "message": "Sekarang"
+  },
+  "nowTooltip": {
+    "message": "Gunakan waktu video saat ini"
+  },
+  "preview": {
+    "message": "Pratinjau"
+  },
+  "previewTooltip": {
+    "message": "Putar klip untuk memeriksanya"
+  },
+  "copy": {
+    "message": "Salin"
+  },
+  "copyClipLink": {
+    "message": "Salin link klip"
+  },
+  "copied": {
+    "message": "Disalin!"
+  },
+  "copyFailed": {
+    "message": "Gagal menyalin"
+  },
+  "clipLinkLabel": {
+    "message": "Link klip"
+  },
+  "clipLength": {
+    "message": "Durasi: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "Video akan berhenti di waktu selesai yang dipilih, dengan pilihan untuk lanjut menonton atau memutar ulang klip."
+  },
+  "errorStartInvalid": {
+    "message": "Masukkan waktu mulai yang valid, misalnya 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Masukkan waktu selesai yang valid, misalnya 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Waktu selesai harus setelah waktu mulai."
+  },
+  "errorStartPastVideo": {
+    "message": "Waktu mulai melewati durasi video ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Waktu selesai melewati durasi video ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Klip $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Link ini adalah klip: video akan dijeda di waktu selesai"
+  },
+  "badgeCloseTooltip": {
+    "message": "Tonton video lengkapnya"
+  },
+  "badgeCloseLabel": {
+    "message": "Matikan mode klip"
+  },
+  "clipEnded": {
+    "message": "Klip selesai"
+  },
+  "replayClip": {
+    "message": "Putar ulang klip"
+  },
+  "keepWatching": {
+    "message": "Lanjut menonton"
+  },
+  "popupTip": {
+    "message": "Tips: biarkan jendela ini terbuka saat video diputar dan tekan $NOW$ di momen mulai dan selesai.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Buka video YouTube untuk membagikan klipnya."
+  },
+  "msgReloadTab": {
+    "message": "Muat ulang tab YouTube ini agar Clip Share dapat terhubung."
+  },
+  "msgLostConnection": {
+    "message": "Koneksi ke tab YouTube terputus. Muat ulang tab lalu coba lagi."
+  },
+  "linkTypeLabel": {
+    "message": "Jenis link"
+  },
+  "linkEveryone": {
+    "message": "Link untuk semua"
+  },
+  "linkYouTube": {
+    "message": "Link YouTube"
+  },
+  "everyoneHint": {
+    "message": "Membuka halaman yang hanya memutar klip ini, di perangkat apa pun, bahkan tanpa Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Tonton di YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Link klip ini tidak lengkap atau rusak. Minta link baru kepada pengirimnya."
+  },
+  "siteCantEmbed": {
+    "message": "Video ini tidak dapat diputar di sini."
+  },
+  "clipButton": {
+    "message": "Klip"
+  },
+  "close": {
+    "message": "Tutup"
+  },
+  "cancelPreview": {
+    "message": "Batalkan pratinjau"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Hentikan pratinjau dan kembali ke posisi sebelumnya di video"
+  }
+}

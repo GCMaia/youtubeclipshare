@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "pt-PT"
+  },
+  "extName": {
+    "message": "Clip Share para YouTube"
+  },
+  "extDescription": {
+    "message": "Partilhe links do YouTube que começam e terminam exatamente nos momentos que escolher."
+  },
+  "actionTitle": {
+    "message": "Partilhar um clip deste vídeo"
+  },
+  "shareClip": {
+    "message": "Partilhar clip"
+  },
+  "start": {
+    "message": "Início"
+  },
+  "end": {
+    "message": "Fim"
+  },
+  "startTimeLabel": {
+    "message": "Início do clip"
+  },
+  "endTimeLabel": {
+    "message": "Fim do clip"
+  },
+  "now": {
+    "message": "Agora"
+  },
+  "nowTooltip": {
+    "message": "Usar o tempo atual do vídeo"
+  },
+  "preview": {
+    "message": "Pré-visualizar"
+  },
+  "previewTooltip": {
+    "message": "Reproduzir o clip para verificar"
+  },
+  "copy": {
+    "message": "Copiar"
+  },
+  "copyClipLink": {
+    "message": "Copiar link do clip"
+  },
+  "copied": {
+    "message": "Copiado!"
+  },
+  "copyFailed": {
+    "message": "Não foi possível copiar"
+  },
+  "clipLinkLabel": {
+    "message": "Link do clip"
+  },
+  "clipLength": {
+    "message": "$LENGTH$ de duração",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "O vídeo para no tempo final selecionado, com opções para continuar ou repetir o clip."
+  },
+  "errorStartInvalid": {
+    "message": "Introduza um tempo de início válido, como 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Introduza um tempo final válido, como 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "O tempo final tem de ser posterior ao tempo de início."
+  },
+  "errorStartPastVideo": {
+    "message": "O tempo de início ultrapassa a duração do vídeo ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "O tempo final ultrapassa a duração do vídeo ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Clip $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Este link é um clip: o vídeo pausa no tempo final"
+  },
+  "badgeCloseTooltip": {
+    "message": "Ver o vídeo completo"
+  },
+  "badgeCloseLabel": {
+    "message": "Desativar o modo clip"
+  },
+  "clipEnded": {
+    "message": "Fim do clip"
+  },
+  "replayClip": {
+    "message": "Repetir clip"
+  },
+  "keepWatching": {
+    "message": "Continuar a ver"
+  },
+  "popupTip": {
+    "message": "Dica: deixe esta janela aberta enquanto o vídeo é reproduzido e clique em $NOW$ nos momentos de início e fim.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Abra um vídeo do YouTube para partilhar um clip."
+  },
+  "msgReloadTab": {
+    "message": "Recarregue este separador do YouTube para que o Clip Share se possa ligar a ele."
+  },
+  "msgLostConnection": {
+    "message": "Perdeu-se a ligação ao separador do YouTube. Recarregue-o e tente novamente."
+  },
+  "linkTypeLabel": {
+    "message": "Tipo de link"
+  },
+  "linkEveryone": {
+    "message": "Link para todos"
+  },
+  "linkYouTube": {
+    "message": "Link do YouTube"
+  },
+  "everyoneHint": {
+    "message": "Abre uma página que reproduz apenas este clip, em qualquer dispositivo, mesmo sem o Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Ver no YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Este link de clip está incompleto ou danificado. Peça um novo a quem o enviou."
+  },
+  "siteCantEmbed": {
+    "message": "Este vídeo não pode ser reproduzido aqui."
+  },
+  "clipButton": {
+    "message": "Clip"
+  },
+  "close": {
+    "message": "Fechar"
+  },
+  "cancelPreview": {
+    "message": "Cancelar pré-visualização"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Parar a pré-visualização e voltar ao ponto onde estava no vídeo"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "zh-CN"
+  },
+  "extName": {
+    "message": "Clip Share for YouTube"
+  },
+  "extDescription": {
+    "message": "分享在你选定的时刻开始和停止的 YouTube 链接。"
+  },
+  "actionTitle": {
+    "message": "分享此视频的片段"
+  },
+  "shareClip": {
+    "message": "分享片段"
+  },
+  "start": {
+    "message": "开始"
+  },
+  "end": {
+    "message": "结束"
+  },
+  "startTimeLabel": {
+    "message": "片段开始时间"
+  },
+  "endTimeLabel": {
+    "message": "片段结束时间"
+  },
+  "now": {
+    "message": "当前"
+  },
+  "nowTooltip": {
+    "message": "使用视频的当前时间"
+  },
+  "preview": {
+    "message": "预览"
+  },
+  "previewTooltip": {
+    "message": "播放片段进行检查"
+  },
+  "copy": {
+    "message": "复制"
+  },
+  "copyClipLink": {
+    "message": "复制片段链接"
+  },
+  "copied": {
+    "message": "已复制！"
+  },
+  "copyFailed": {
+    "message": "复制失败"
+  },
+  "clipLinkLabel": {
+    "message": "片段链接"
+  },
+  "clipLength": {
+    "message": "时长：$LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "视频将在所选结束时间停止，并提供继续观看或重播片段的选项。"
+  },
+  "errorStartInvalid": {
+    "message": "请输入有效的开始时间，例如 1:23。"
+  },
+  "errorEndInvalid": {
+    "message": "请输入有效的结束时间，例如 2:45。"
+  },
+  "errorEndBeforeStart": {
+    "message": "结束时间必须晚于开始时间。"
+  },
+  "errorStartPastVideo": {
+    "message": "开始时间超出了视频时长（$DURATION$）。",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "结束时间超出了视频时长（$DURATION$）。",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "片段 $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "此链接是一个片段：视频会在结束时间暂停"
+  },
+  "badgeCloseTooltip": {
+    "message": "改为观看完整视频"
+  },
+  "badgeCloseLabel": {
+    "message": "关闭片段模式"
+  },
+  "clipEnded": {
+    "message": "片段已结束"
+  },
+  "replayClip": {
+    "message": "重播片段"
+  },
+  "keepWatching": {
+    "message": "继续观看"
+  },
+  "popupTip": {
+    "message": "提示：在视频播放时保持此窗口打开，并在开始和结束的时刻点击“$NOW$”。",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "打开一个 YouTube 视频以分享其中的片段。"
+  },
+  "msgReloadTab": {
+    "message": "请重新加载此 YouTube 标签页，以便 Clip Share 连接。"
+  },
+  "msgLostConnection": {
+    "message": "与 YouTube 标签页的连接已断开。请重新加载该标签页后重试。"
+  },
+  "linkTypeLabel": {
+    "message": "链接类型"
+  },
+  "linkEveryone": {
+    "message": "通用链接"
+  },
+  "linkYouTube": {
+    "message": "YouTube 链接"
+  },
+  "everyoneHint": {
+    "message": "打开一个只播放此片段的页面，任何设备都能观看，无需安装 Clip Share。"
+  },
+  "watchOnYouTube": {
+    "message": "在 YouTube 上观看"
+  },
+  "siteInvalidLink": {
+    "message": "此片段链接不完整或已损坏。请向发送者索取新链接。"
+  },
+  "siteCantEmbed": {
+    "message": "此视频无法在这里播放。"
+  },
+  "clipButton": {
+    "message": "片段"
+  },
+  "close": {
+    "message": "关闭"
+  },
+  "cancelPreview": {
+    "message": "取消预览"
+  },
+  "cancelPreviewTooltip": {
+    "message": "停止预览并回到视频中原来的位置"
+  }
+}

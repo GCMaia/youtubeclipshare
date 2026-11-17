@@ -1,0 +1,220 @@
+{
+  "lang": {
+    "message": "en",
+    "description": "BCP 47 code of this translation (e.g. pt-BR). Not shown to users; do not translate."
+  },
+  "extName": {
+    "message": "Clip Share for YouTube",
+    "description": "Extension name in the Chrome Web Store and extensions page. Keep \"Clip Share\" and \"YouTube\" as is."
+  },
+  "extDescription": {
+    "message": "Share YouTube links that start and stop at the exact moments you pick.",
+    "description": "Extension description in the Chrome Web Store and extensions page."
+  },
+  "actionTitle": {
+    "message": "Share a clip of this video",
+    "description": "Tooltip of the toolbar button."
+  },
+  "shareClip": {
+    "message": "Share a clip",
+    "description": "Heading of the clip picker (in the YouTube Share dialog and the popup)."
+  },
+  "start": {
+    "message": "Start",
+    "description": "Label above the clip start time field."
+  },
+  "end": {
+    "message": "End",
+    "description": "Label above the clip end time field."
+  },
+  "startTimeLabel": {
+    "message": "Clip start time",
+    "description": "Screen-reader label of the start time field."
+  },
+  "endTimeLabel": {
+    "message": "Clip end time",
+    "description": "Screen-reader label of the end time field."
+  },
+  "now": {
+    "message": "Now",
+    "description": "Short button that fills in the current playback time."
+  },
+  "nowTooltip": {
+    "message": "Use the current video time",
+    "description": "Tooltip of the \"Now\" button."
+  },
+  "preview": {
+    "message": "Preview",
+    "description": "Button that plays the clip so the sharer can check it."
+  },
+  "previewTooltip": {
+    "message": "Play the clip to check it",
+    "description": "Tooltip of the Preview button."
+  },
+  "copy": {
+    "message": "Copy",
+    "description": "Short button that copies the clip link (YouTube Share dialog)."
+  },
+  "copyClipLink": {
+    "message": "Copy clip link",
+    "description": "Button that copies the clip link (popup)."
+  },
+  "copied": {
+    "message": "Copied!",
+    "description": "Shown on the copy button right after copying."
+  },
+  "copyFailed": {
+    "message": "Copy failed",
+    "description": "Shown on the copy button when copying did not work."
+  },
+  "clipLinkLabel": {
+    "message": "Clip link",
+    "description": "Screen-reader label of the field that shows the clip link."
+  },
+  "clipLength": {
+    "message": "$LENGTH$ long",
+    "description": "Length of the selected clip, e.g. \"0:30 long\".",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "The video will stop at the selected end time with options to continue or replay the clip.",
+    "description": "Note under the clip picker explaining what viewers of the link will see."
+  },
+  "errorStartInvalid": {
+    "message": "Enter a valid start time, like 1:23.",
+    "description": "Error when the start time cannot be read. Keep the example time 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Enter a valid end time, like 2:45.",
+    "description": "Error when the end time cannot be read. Keep the example time 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "The end time must be after the start time.",
+    "description": "Error when the end time is not after the start time."
+  },
+  "errorStartPastVideo": {
+    "message": "The start time is past the end of the video ($DURATION$).",
+    "description": "Error when the start time is after the video ends.",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "The end time is past the end of the video ($DURATION$).",
+    "description": "Error when the end time is after the video ends.",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Clip $RANGE$",
+    "description": "Label on the video player while a clip plays, e.g. \"Clip 1:23 – 2:00\".",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "This link is a clip: the video pauses at the end time",
+    "description": "Tooltip of the label on the video player while a clip plays."
+  },
+  "badgeCloseTooltip": {
+    "message": "Watch the full video instead",
+    "description": "Tooltip of the ✕ button that turns clip mode off."
+  },
+  "badgeCloseLabel": {
+    "message": "Turn off clip mode",
+    "description": "Screen-reader label of the ✕ button that turns clip mode off."
+  },
+  "clipEnded": {
+    "message": "Clip ended",
+    "description": "Heading shown over the video when the clip reaches its end time."
+  },
+  "replayClip": {
+    "message": "Replay clip",
+    "description": "Button that plays the clip again from its start."
+  },
+  "keepWatching": {
+    "message": "Keep watching",
+    "description": "Button that continues watching the rest of the video after the clip ended."
+  },
+  "popupTip": {
+    "message": "Tip: leave this open while the video plays and press $NOW$ at the start and end moments.",
+    "description": "Tip in the popup. $NOW$ is replaced with the bold \"Now\" button label.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Open a YouTube video to share a clip of it.",
+    "description": "Popup message when the current tab is not a YouTube video."
+  },
+  "msgReloadTab": {
+    "message": "Reload this YouTube tab so Clip Share can connect to it.",
+    "description": "Popup message when the YouTube tab was open before the extension was installed or updated."
+  },
+  "msgLostConnection": {
+    "message": "Lost connection to the YouTube tab. Reload it and try again.",
+    "description": "Popup message when the YouTube tab stopped responding."
+  },
+  "linkTypeLabel": {
+    "message": "Link type",
+    "description": "Screen-reader label of the switch between the two kinds of clip link."
+  },
+  "linkEveryone": {
+    "message": "Link for everyone",
+    "description": "Option: a link to the Clip Share web page, which plays the clip for anyone without the extension."
+  },
+  "linkYouTube": {
+    "message": "YouTube link",
+    "description": "Option: a regular youtube.com link (stops at the end time only for people with the extension)."
+  },
+  "everyoneHint": {
+    "message": "Opens a page that plays just this clip, on any device, even without Clip Share.",
+    "description": "Note under the picker when \"Link for everyone\" is selected."
+  },
+  "watchOnYouTube": {
+    "message": "Watch on YouTube",
+    "description": "Link/button on the web player that opens the video on youtube.com."
+  },
+  "siteInvalidLink": {
+    "message": "This clip link is incomplete or broken. Ask the person who sent it for a new one.",
+    "description": "Web player message when the link is missing the video or the times."
+  },
+  "siteCantEmbed": {
+    "message": "This video can’t be played here.",
+    "description": "Web player message when YouTube does not allow the video to play outside youtube.com."
+  },
+  "clipButton": {
+    "message": "Clip",
+    "description": "Label of the Clip button added next to Like/Share under the video. Keep it short (one word if possible)."
+  },
+  "close": {
+    "message": "Close",
+    "description": "Screen-reader label and tooltip of the ✕ button that closes the clip picker."
+  },
+  "cancelPreview": {
+    "message": "Cancel preview",
+    "description": "Button shown only while a preview plays. Stops the preview."
+  },
+  "cancelPreviewTooltip": {
+    "message": "Stop the preview and go back to where you were in the video",
+    "description": "Tooltip of the Cancel preview button."
+  }
+}

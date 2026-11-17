@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "hi"
+  },
+  "extName": {
+    "message": "YouTube के लिए Clip Share"
+  },
+  "extDescription": {
+    "message": "ऐसे YouTube लिंक शेयर करें जो ठीक आपके चुने हुए पलों पर शुरू और खत्म हों।"
+  },
+  "actionTitle": {
+    "message": "इस वीडियो की एक क्लिप शेयर करें"
+  },
+  "shareClip": {
+    "message": "क्लिप शेयर करें"
+  },
+  "start": {
+    "message": "शुरुआत"
+  },
+  "end": {
+    "message": "अंत"
+  },
+  "startTimeLabel": {
+    "message": "क्लिप शुरू होने का समय"
+  },
+  "endTimeLabel": {
+    "message": "क्लिप खत्म होने का समय"
+  },
+  "now": {
+    "message": "अभी"
+  },
+  "nowTooltip": {
+    "message": "वीडियो का मौजूदा समय इस्तेमाल करें"
+  },
+  "preview": {
+    "message": "झलक देखें"
+  },
+  "previewTooltip": {
+    "message": "जांचने के लिए क्लिप चलाएं"
+  },
+  "copy": {
+    "message": "कॉपी करें"
+  },
+  "copyClipLink": {
+    "message": "क्लिप का लिंक कॉपी करें"
+  },
+  "copied": {
+    "message": "कॉपी हो गया!"
+  },
+  "copyFailed": {
+    "message": "कॉपी नहीं हो सका"
+  },
+  "clipLinkLabel": {
+    "message": "क्लिप का लिंक"
+  },
+  "clipLength": {
+    "message": "अवधि: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "वीडियो चुने गए अंत समय पर रुक जाएगा, और आगे देखने या क्लिप दोबारा चलाने के विकल्प मिलेंगे।"
+  },
+  "errorStartInvalid": {
+    "message": "शुरू होने का सही समय डालें, जैसे 1:23।"
+  },
+  "errorEndInvalid": {
+    "message": "खत्म होने का सही समय डालें, जैसे 2:45।"
+  },
+  "errorEndBeforeStart": {
+    "message": "खत्म होने का समय शुरू होने के समय के बाद होना चाहिए।"
+  },
+  "errorStartPastVideo": {
+    "message": "शुरू होने का समय वीडियो की अवधि ($DURATION$) से ज़्यादा है।",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "खत्म होने का समय वीडियो की अवधि ($DURATION$) से ज़्यादा है।",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "क्लिप $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "यह लिंक एक क्लिप है: वीडियो अंत समय पर रुक जाएगा"
+  },
+  "badgeCloseTooltip": {
+    "message": "पूरा वीडियो देखें"
+  },
+  "badgeCloseLabel": {
+    "message": "क्लिप मोड बंद करें"
+  },
+  "clipEnded": {
+    "message": "क्लिप खत्म हुई"
+  },
+  "replayClip": {
+    "message": "क्लिप दोबारा चलाएं"
+  },
+  "keepWatching": {
+    "message": "देखना जारी रखें"
+  },
+  "popupTip": {
+    "message": "सुझाव: वीडियो चलते समय यह विंडो खुली रखें और शुरुआत व अंत के पल पर $NOW$ दबाएं।",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "क्लिप शेयर करने के लिए YouTube का कोई वीडियो खोलें।"
+  },
+  "msgReloadTab": {
+    "message": "इस YouTube टैब को रीलोड करें ताकि Clip Share उससे कनेक्ट हो सके।"
+  },
+  "msgLostConnection": {
+    "message": "YouTube टैब से कनेक्शन टूट गया। टैब रीलोड करके फिर से कोशिश करें।"
+  },
+  "linkTypeLabel": {
+    "message": "लिंक का प्रकार"
+  },
+  "linkEveryone": {
+    "message": "सबके लिए लिंक"
+  },
+  "linkYouTube": {
+    "message": "YouTube लिंक"
+  },
+  "everyoneHint": {
+    "message": "एक पेज खोलता है जो सिर्फ़ यह क्लिप चलाता है, किसी भी डिवाइस पर, Clip Share के बिना भी।"
+  },
+  "watchOnYouTube": {
+    "message": "YouTube पर देखें"
+  },
+  "siteInvalidLink": {
+    "message": "यह क्लिप लिंक अधूरा या खराब है। भेजने वाले से नया लिंक मांगें।"
+  },
+  "siteCantEmbed": {
+    "message": "यह वीडियो यहां नहीं चलाया जा सकता।"
+  },
+  "clipButton": {
+    "message": "क्लिप"
+  },
+  "close": {
+    "message": "बंद करें"
+  },
+  "cancelPreview": {
+    "message": "झलक रद्द करें"
+  },
+  "cancelPreviewTooltip": {
+    "message": "झलक रोकें और वीडियो में वहीं लौटें जहां आप थे"
+  }
+}

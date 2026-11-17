@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "pl"
+  },
+  "extName": {
+    "message": "Clip Share dla YouTube"
+  },
+  "extDescription": {
+    "message": "Udostępniaj linki do YouTube, które zaczynają się i kończą dokładnie w wybranych momentach."
+  },
+  "actionTitle": {
+    "message": "Udostępnij klip z tego filmu"
+  },
+  "shareClip": {
+    "message": "Udostępnij klip"
+  },
+  "start": {
+    "message": "Początek"
+  },
+  "end": {
+    "message": "Koniec"
+  },
+  "startTimeLabel": {
+    "message": "Początek klipu"
+  },
+  "endTimeLabel": {
+    "message": "Koniec klipu"
+  },
+  "now": {
+    "message": "Teraz"
+  },
+  "nowTooltip": {
+    "message": "Użyj bieżącego czasu filmu"
+  },
+  "preview": {
+    "message": "Podgląd"
+  },
+  "previewTooltip": {
+    "message": "Odtwórz klip, aby go sprawdzić"
+  },
+  "copy": {
+    "message": "Kopiuj"
+  },
+  "copyClipLink": {
+    "message": "Kopiuj link do klipu"
+  },
+  "copied": {
+    "message": "Skopiowano!"
+  },
+  "copyFailed": {
+    "message": "Nie udało się skopiować"
+  },
+  "clipLinkLabel": {
+    "message": "Link do klipu"
+  },
+  "clipLength": {
+    "message": "Długość: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "Film zatrzyma się w wybranym momencie końcowym, z opcją oglądania dalej lub powtórzenia klipu."
+  },
+  "errorStartInvalid": {
+    "message": "Wpisz prawidłowy czas początku, np. 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Wpisz prawidłowy czas końca, np. 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Czas końca musi być późniejszy niż czas początku."
+  },
+  "errorStartPastVideo": {
+    "message": "Czas początku wykracza poza koniec filmu ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Czas końca wykracza poza koniec filmu ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Klip $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Ten link to klip: film zatrzyma się w momencie końcowym"
+  },
+  "badgeCloseTooltip": {
+    "message": "Obejrzyj cały film"
+  },
+  "badgeCloseLabel": {
+    "message": "Wyłącz tryb klipu"
+  },
+  "clipEnded": {
+    "message": "Koniec klipu"
+  },
+  "replayClip": {
+    "message": "Powtórz klip"
+  },
+  "keepWatching": {
+    "message": "Oglądaj dalej"
+  },
+  "popupTip": {
+    "message": "Wskazówka: zostaw to okno otwarte podczas odtwarzania i kliknij $NOW$ w momencie początku i końca.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Otwórz film na YouTube, aby udostępnić jego klip."
+  },
+  "msgReloadTab": {
+    "message": "Odśwież tę kartę YouTube, aby Clip Share mógł się z nią połączyć."
+  },
+  "msgLostConnection": {
+    "message": "Utracono połączenie z kartą YouTube. Odśwież ją i spróbuj ponownie."
+  },
+  "linkTypeLabel": {
+    "message": "Typ linku"
+  },
+  "linkEveryone": {
+    "message": "Link dla wszystkich"
+  },
+  "linkYouTube": {
+    "message": "Link do YouTube"
+  },
+  "everyoneHint": {
+    "message": "Otwiera stronę, która odtwarza tylko ten klip – na każdym urządzeniu, nawet bez Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Obejrzyj na YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Ten link do klipu jest niekompletny lub uszkodzony. Poproś nadawcę o nowy."
+  },
+  "siteCantEmbed": {
+    "message": "Tego filmu nie można tu odtworzyć."
+  },
+  "clipButton": {
+    "message": "Klip"
+  },
+  "close": {
+    "message": "Zamknij"
+  },
+  "cancelPreview": {
+    "message": "Anuluj podgląd"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Zatrzymaj podgląd i wróć do poprzedniego miejsca w filmie"
+  }
+}

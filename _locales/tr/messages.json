@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "tr"
+  },
+  "extName": {
+    "message": "YouTube için Clip Share"
+  },
+  "extDescription": {
+    "message": "Seçtiğiniz anlarda başlayıp biten YouTube bağlantıları paylaşın."
+  },
+  "actionTitle": {
+    "message": "Bu videodan bir klip paylaş"
+  },
+  "shareClip": {
+    "message": "Klip paylaş"
+  },
+  "start": {
+    "message": "Başlangıç"
+  },
+  "end": {
+    "message": "Bitiş"
+  },
+  "startTimeLabel": {
+    "message": "Klip başlangıç zamanı"
+  },
+  "endTimeLabel": {
+    "message": "Klip bitiş zamanı"
+  },
+  "now": {
+    "message": "Şimdi"
+  },
+  "nowTooltip": {
+    "message": "Videonun şu anki zamanını kullan"
+  },
+  "preview": {
+    "message": "Önizle"
+  },
+  "previewTooltip": {
+    "message": "Kontrol etmek için klibi oynat"
+  },
+  "copy": {
+    "message": "Kopyala"
+  },
+  "copyClipLink": {
+    "message": "Klip bağlantısını kopyala"
+  },
+  "copied": {
+    "message": "Kopyalandı!"
+  },
+  "copyFailed": {
+    "message": "Kopyalanamadı"
+  },
+  "clipLinkLabel": {
+    "message": "Klip bağlantısı"
+  },
+  "clipLength": {
+    "message": "Süre: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "Video, seçilen bitiş zamanında durur; izlemeye devam etme veya klibi tekrar oynatma seçenekleri sunulur."
+  },
+  "errorStartInvalid": {
+    "message": "Geçerli bir başlangıç zamanı girin, örneğin 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Geçerli bir bitiş zamanı girin, örneğin 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Bitiş zamanı başlangıç zamanından sonra olmalıdır."
+  },
+  "errorStartPastVideo": {
+    "message": "Başlangıç zamanı videonun süresini aşıyor ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Bitiş zamanı videonun süresini aşıyor ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Klip $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Bu bağlantı bir klip: video bitiş zamanında duraklar"
+  },
+  "badgeCloseTooltip": {
+    "message": "Bunun yerine videonun tamamını izle"
+  },
+  "badgeCloseLabel": {
+    "message": "Klip modunu kapat"
+  },
+  "clipEnded": {
+    "message": "Klip bitti"
+  },
+  "replayClip": {
+    "message": "Klibi tekrar oynat"
+  },
+  "keepWatching": {
+    "message": "İzlemeye devam et"
+  },
+  "popupTip": {
+    "message": "İpucu: video oynarken bu pencereyi açık bırakın ve başlangıç ile bitiş anlarında $NOW$ düğmesine basın.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Klip paylaşmak için bir YouTube videosu açın."
+  },
+  "msgReloadTab": {
+    "message": "Clip Share’in bağlanabilmesi için bu YouTube sekmesini yeniden yükleyin."
+  },
+  "msgLostConnection": {
+    "message": "YouTube sekmesiyle bağlantı kesildi. Sekmeyi yeniden yükleyip tekrar deneyin."
+  },
+  "linkTypeLabel": {
+    "message": "Bağlantı türü"
+  },
+  "linkEveryone": {
+    "message": "Herkes için bağlantı"
+  },
+  "linkYouTube": {
+    "message": "YouTube bağlantısı"
+  },
+  "everyoneHint": {
+    "message": "Yalnızca bu klibi oynatan bir sayfa açar; Clip Share olmadan da her cihazda çalışır."
+  },
+  "watchOnYouTube": {
+    "message": "YouTube’da izle"
+  },
+  "siteInvalidLink": {
+    "message": "Bu klip bağlantısı eksik veya bozuk. Gönderen kişiden yenisini isteyin."
+  },
+  "siteCantEmbed": {
+    "message": "Bu video burada oynatılamıyor."
+  },
+  "clipButton": {
+    "message": "Klip"
+  },
+  "close": {
+    "message": "Kapat"
+  },
+  "cancelPreview": {
+    "message": "Önizlemeyi iptal et"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Önizlemeyi durdur ve videoda kaldığın yere dön"
+  }
+}

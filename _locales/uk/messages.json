@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "uk"
+  },
+  "extName": {
+    "message": "Clip Share для YouTube"
+  },
+  "extDescription": {
+    "message": "Діліться посиланнями на YouTube, які починаються й закінчуються саме у вибрані моменти."
+  },
+  "actionTitle": {
+    "message": "Поділитися фрагментом цього відео"
+  },
+  "shareClip": {
+    "message": "Поділитися фрагментом"
+  },
+  "start": {
+    "message": "Початок"
+  },
+  "end": {
+    "message": "Кінець"
+  },
+  "startTimeLabel": {
+    "message": "Початок фрагмента"
+  },
+  "endTimeLabel": {
+    "message": "Кінець фрагмента"
+  },
+  "now": {
+    "message": "Зараз"
+  },
+  "nowTooltip": {
+    "message": "Узяти поточний час відео"
+  },
+  "preview": {
+    "message": "Перегляд"
+  },
+  "previewTooltip": {
+    "message": "Відтворити фрагмент для перевірки"
+  },
+  "copy": {
+    "message": "Копіювати"
+  },
+  "copyClipLink": {
+    "message": "Копіювати посилання"
+  },
+  "copied": {
+    "message": "Скопійовано!"
+  },
+  "copyFailed": {
+    "message": "Не вдалося скопіювати"
+  },
+  "clipLinkLabel": {
+    "message": "Посилання на фрагмент"
+  },
+  "clipLength": {
+    "message": "Тривалість: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "Відео зупиниться на вибраному часі завершення — можна буде продовжити перегляд або повторити фрагмент."
+  },
+  "errorStartInvalid": {
+    "message": "Введіть правильний час початку, наприклад 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Введіть правильний час завершення, наприклад 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Час завершення має бути пізніше за час початку."
+  },
+  "errorStartPastVideo": {
+    "message": "Час початку виходить за межі відео ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Час завершення виходить за межі відео ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Фрагмент $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Це посилання на фрагмент: відео зупиниться в кінці фрагмента"
+  },
+  "badgeCloseTooltip": {
+    "message": "Дивитися все відео"
+  },
+  "badgeCloseLabel": {
+    "message": "Вимкнути режим фрагмента"
+  },
+  "clipEnded": {
+    "message": "Фрагмент завершився"
+  },
+  "replayClip": {
+    "message": "Повторити фрагмент"
+  },
+  "keepWatching": {
+    "message": "Дивитися далі"
+  },
+  "popupTip": {
+    "message": "Порада: не закривайте це вікно під час відтворення й натискайте $NOW$ у моменти початку та кінця.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Відкрийте відео на YouTube, щоб поділитися його фрагментом."
+  },
+  "msgReloadTab": {
+    "message": "Перезавантажте цю вкладку YouTube, щоб Clip Share міг до неї підключитися."
+  },
+  "msgLostConnection": {
+    "message": "З’єднання з вкладкою YouTube втрачено. Перезавантажте її та спробуйте ще раз."
+  },
+  "linkTypeLabel": {
+    "message": "Тип посилання"
+  },
+  "linkEveryone": {
+    "message": "Посилання для всіх"
+  },
+  "linkYouTube": {
+    "message": "Посилання на YouTube"
+  },
+  "everyoneHint": {
+    "message": "Відкриває сторінку, яка відтворює лише цей фрагмент — на будь-якому пристрої, навіть без Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Дивитися на YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Це посилання на фрагмент неповне або пошкоджене. Попросіть відправника надіслати нове."
+  },
+  "siteCantEmbed": {
+    "message": "Це відео не можна відтворити тут."
+  },
+  "clipButton": {
+    "message": "Фрагмент"
+  },
+  "close": {
+    "message": "Закрити"
+  },
+  "cancelPreview": {
+    "message": "Скасувати перегляд"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Зупинити перегляд і повернутися до попереднього місця у відео"
+  }
+}

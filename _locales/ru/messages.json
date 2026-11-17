@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "ru"
+  },
+  "extName": {
+    "message": "Clip Share для YouTube"
+  },
+  "extDescription": {
+    "message": "Делитесь ссылками на YouTube, которые начинаются и заканчиваются точно в выбранные моменты."
+  },
+  "actionTitle": {
+    "message": "Поделиться фрагментом этого видео"
+  },
+  "shareClip": {
+    "message": "Поделиться фрагментом"
+  },
+  "start": {
+    "message": "Начало"
+  },
+  "end": {
+    "message": "Конец"
+  },
+  "startTimeLabel": {
+    "message": "Начало фрагмента"
+  },
+  "endTimeLabel": {
+    "message": "Конец фрагмента"
+  },
+  "now": {
+    "message": "Сейчас"
+  },
+  "nowTooltip": {
+    "message": "Взять текущее время видео"
+  },
+  "preview": {
+    "message": "Просмотр"
+  },
+  "previewTooltip": {
+    "message": "Воспроизвести фрагмент для проверки"
+  },
+  "copy": {
+    "message": "Копировать"
+  },
+  "copyClipLink": {
+    "message": "Копировать ссылку"
+  },
+  "copied": {
+    "message": "Скопировано!"
+  },
+  "copyFailed": {
+    "message": "Не удалось скопировать"
+  },
+  "clipLinkLabel": {
+    "message": "Ссылка на фрагмент"
+  },
+  "clipLength": {
+    "message": "Длительность: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "Видео остановится на выбранном времени окончания — можно будет продолжить просмотр или повторить фрагмент."
+  },
+  "errorStartInvalid": {
+    "message": "Введите корректное время начала, например 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Введите корректное время окончания, например 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Время окончания должно быть позже времени начала."
+  },
+  "errorStartPastVideo": {
+    "message": "Время начала выходит за пределы видео ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Время окончания выходит за пределы видео ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Фрагмент $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Это ссылка на фрагмент: видео остановится в конце фрагмента"
+  },
+  "badgeCloseTooltip": {
+    "message": "Смотреть всё видео"
+  },
+  "badgeCloseLabel": {
+    "message": "Выключить режим фрагмента"
+  },
+  "clipEnded": {
+    "message": "Фрагмент закончился"
+  },
+  "replayClip": {
+    "message": "Повторить фрагмент"
+  },
+  "keepWatching": {
+    "message": "Смотреть дальше"
+  },
+  "popupTip": {
+    "message": "Совет: не закрывайте это окно во время воспроизведения и нажимайте $NOW$ в моменты начала и конца.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Откройте видео на YouTube, чтобы поделиться его фрагментом."
+  },
+  "msgReloadTab": {
+    "message": "Перезагрузите эту вкладку YouTube, чтобы Clip Share мог к ней подключиться."
+  },
+  "msgLostConnection": {
+    "message": "Соединение с вкладкой YouTube потеряно. Перезагрузите её и попробуйте снова."
+  },
+  "linkTypeLabel": {
+    "message": "Тип ссылки"
+  },
+  "linkEveryone": {
+    "message": "Ссылка для всех"
+  },
+  "linkYouTube": {
+    "message": "Ссылка на YouTube"
+  },
+  "everyoneHint": {
+    "message": "Открывает страницу, которая воспроизводит только этот фрагмент — на любом устройстве, даже без Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Смотреть на YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Эта ссылка на фрагмент неполная или повреждена. Попросите отправителя прислать новую."
+  },
+  "siteCantEmbed": {
+    "message": "Это видео нельзя воспроизвести здесь."
+  },
+  "clipButton": {
+    "message": "Фрагмент"
+  },
+  "close": {
+    "message": "Закрыть"
+  },
+  "cancelPreview": {
+    "message": "Отменить просмотр"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Остановить просмотр и вернуться к прежнему месту в видео"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "fr"
+  },
+  "extName": {
+    "message": "Clip Share pour YouTube"
+  },
+  "extDescription": {
+    "message": "Partagez des liens YouTube qui commencent et s’arrêtent exactement aux moments choisis."
+  },
+  "actionTitle": {
+    "message": "Partager un extrait de cette vidéo"
+  },
+  "shareClip": {
+    "message": "Partager un extrait"
+  },
+  "start": {
+    "message": "Début"
+  },
+  "end": {
+    "message": "Fin"
+  },
+  "startTimeLabel": {
+    "message": "Début de l’extrait"
+  },
+  "endTimeLabel": {
+    "message": "Fin de l’extrait"
+  },
+  "now": {
+    "message": "Maintenant"
+  },
+  "nowTooltip": {
+    "message": "Utiliser le temps actuel de la vidéo"
+  },
+  "preview": {
+    "message": "Aperçu"
+  },
+  "previewTooltip": {
+    "message": "Lire l’extrait pour vérifier"
+  },
+  "copy": {
+    "message": "Copier"
+  },
+  "copyClipLink": {
+    "message": "Copier le lien de l’extrait"
+  },
+  "copied": {
+    "message": "Copié !"
+  },
+  "copyFailed": {
+    "message": "Échec de la copie"
+  },
+  "clipLinkLabel": {
+    "message": "Lien de l’extrait"
+  },
+  "clipLength": {
+    "message": "Durée : $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "La vidéo s’arrêtera au temps de fin choisi, avec la possibilité de continuer ou de revoir l’extrait."
+  },
+  "errorStartInvalid": {
+    "message": "Saisissez un temps de début valide, par exemple 1:23."
+  },
+  "errorEndInvalid": {
+    "message": "Saisissez un temps de fin valide, par exemple 2:45."
+  },
+  "errorEndBeforeStart": {
+    "message": "Le temps de fin doit être après le temps de début."
+  },
+  "errorStartPastVideo": {
+    "message": "Le temps de début dépasse la durée de la vidéo ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "Le temps de fin dépasse la durée de la vidéo ($DURATION$).",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "Extrait $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "Ce lien est un extrait : la vidéo se met en pause au temps de fin"
+  },
+  "badgeCloseTooltip": {
+    "message": "Regarder la vidéo en entier"
+  },
+  "badgeCloseLabel": {
+    "message": "Désactiver le mode extrait"
+  },
+  "clipEnded": {
+    "message": "Fin de l’extrait"
+  },
+  "replayClip": {
+    "message": "Revoir l’extrait"
+  },
+  "keepWatching": {
+    "message": "Continuer"
+  },
+  "popupTip": {
+    "message": "Astuce : laissez cette fenêtre ouverte pendant la lecture et cliquez sur $NOW$ aux moments de début et de fin.",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "Ouvrez une vidéo YouTube pour en partager un extrait."
+  },
+  "msgReloadTab": {
+    "message": "Rechargez cet onglet YouTube pour que Clip Share puisse s’y connecter."
+  },
+  "msgLostConnection": {
+    "message": "La connexion à l’onglet YouTube a été perdue. Rechargez-le et réessayez."
+  },
+  "linkTypeLabel": {
+    "message": "Type de lien"
+  },
+  "linkEveryone": {
+    "message": "Lien pour tous"
+  },
+  "linkYouTube": {
+    "message": "Lien YouTube"
+  },
+  "everyoneHint": {
+    "message": "Ouvre une page qui lit uniquement cet extrait, sur n’importe quel appareil, même sans Clip Share."
+  },
+  "watchOnYouTube": {
+    "message": "Regarder sur YouTube"
+  },
+  "siteInvalidLink": {
+    "message": "Ce lien d’extrait est incomplet ou endommagé. Demandez-en un nouveau à la personne qui vous l’a envoyé."
+  },
+  "siteCantEmbed": {
+    "message": "Cette vidéo ne peut pas être lue ici."
+  },
+  "clipButton": {
+    "message": "Extrait"
+  },
+  "close": {
+    "message": "Fermer"
+  },
+  "cancelPreview": {
+    "message": "Annuler l’aperçu"
+  },
+  "cancelPreviewTooltip": {
+    "message": "Arrêter l’aperçu et revenir là où vous en étiez dans la vidéo"
+  }
+}

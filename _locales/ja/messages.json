@@ -1,0 +1,173 @@
+{
+  "lang": {
+    "message": "ja"
+  },
+  "extName": {
+    "message": "Clip Share for YouTube"
+  },
+  "extDescription": {
+    "message": "選んだ瞬間から始まり、選んだ瞬間で止まる YouTube リンクを共有できます。"
+  },
+  "actionTitle": {
+    "message": "この動画のクリップを共有"
+  },
+  "shareClip": {
+    "message": "クリップを共有"
+  },
+  "start": {
+    "message": "開始"
+  },
+  "end": {
+    "message": "終了"
+  },
+  "startTimeLabel": {
+    "message": "クリップの開始時間"
+  },
+  "endTimeLabel": {
+    "message": "クリップの終了時間"
+  },
+  "now": {
+    "message": "現在"
+  },
+  "nowTooltip": {
+    "message": "動画の現在の再生位置を使用"
+  },
+  "preview": {
+    "message": "プレビュー"
+  },
+  "previewTooltip": {
+    "message": "クリップを再生して確認"
+  },
+  "copy": {
+    "message": "コピー"
+  },
+  "copyClipLink": {
+    "message": "クリップのリンクをコピー"
+  },
+  "copied": {
+    "message": "コピーしました"
+  },
+  "copyFailed": {
+    "message": "コピーできませんでした"
+  },
+  "clipLinkLabel": {
+    "message": "クリップのリンク"
+  },
+  "clipLength": {
+    "message": "長さ: $LENGTH$",
+    "placeholders": {
+      "length": {
+        "content": "$1",
+        "example": "0:30"
+      }
+    }
+  },
+  "stopHint": {
+    "message": "動画は選択した終了時間で停止し、続きを見るかクリップをもう一度再生するかを選べます。"
+  },
+  "errorStartInvalid": {
+    "message": "有効な開始時間を入力してください（例: 1:23）。"
+  },
+  "errorEndInvalid": {
+    "message": "有効な終了時間を入力してください（例: 2:45）。"
+  },
+  "errorEndBeforeStart": {
+    "message": "終了時間は開始時間より後にしてください。"
+  },
+  "errorStartPastVideo": {
+    "message": "開始時間が動画の長さ（$DURATION$）を超えています。",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "errorEndPastVideo": {
+    "message": "終了時間が動画の長さ（$DURATION$）を超えています。",
+    "placeholders": {
+      "duration": {
+        "content": "$1",
+        "example": "4:12"
+      }
+    }
+  },
+  "badgeLabel": {
+    "message": "クリップ $RANGE$",
+    "placeholders": {
+      "range": {
+        "content": "$1",
+        "example": "1:23 – 2:00"
+      }
+    }
+  },
+  "badgeTooltip": {
+    "message": "このリンクはクリップです。終了時間で動画が一時停止します"
+  },
+  "badgeCloseTooltip": {
+    "message": "動画全体を見る"
+  },
+  "badgeCloseLabel": {
+    "message": "クリップモードをオフにする"
+  },
+  "clipEnded": {
+    "message": "クリップが終了しました"
+  },
+  "replayClip": {
+    "message": "もう一度再生"
+  },
+  "keepWatching": {
+    "message": "続きを見る"
+  },
+  "popupTip": {
+    "message": "ヒント: 動画の再生中にこのウィンドウを開いたままにして、開始と終了のタイミングで「$NOW$」を押してください。",
+    "placeholders": {
+      "now": {
+        "content": "$1",
+        "example": "Now"
+      }
+    }
+  },
+  "msgOpenVideo": {
+    "message": "クリップを共有するには YouTube の動画を開いてください。"
+  },
+  "msgReloadTab": {
+    "message": "Clip Share が接続できるように、この YouTube タブを再読み込みしてください。"
+  },
+  "msgLostConnection": {
+    "message": "YouTube タブとの接続が切れました。タブを再読み込みしてもう一度お試しください。"
+  },
+  "linkTypeLabel": {
+    "message": "リンクの種類"
+  },
+  "linkEveryone": {
+    "message": "誰でも見られるリンク"
+  },
+  "linkYouTube": {
+    "message": "YouTube のリンク"
+  },
+  "everyoneHint": {
+    "message": "このクリップだけを再生するページを開きます。Clip Share がなくても、どのデバイスでも視聴できます。"
+  },
+  "watchOnYouTube": {
+    "message": "YouTube で見る"
+  },
+  "siteInvalidLink": {
+    "message": "このクリップのリンクは不完全か壊れています。送信者に新しいリンクを依頼してください。"
+  },
+  "siteCantEmbed": {
+    "message": "この動画はここでは再生できません。"
+  },
+  "clipButton": {
+    "message": "クリップ"
+  },
+  "close": {
+    "message": "閉じる"
+  },
+  "cancelPreview": {
+    "message": "プレビューをキャンセル"
+  },
+  "cancelPreviewTooltip": {
+    "message": "プレビューを停止して、動画の元の位置に戻ります"
+  }
+}
