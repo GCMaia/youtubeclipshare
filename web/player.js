@@ -2,10 +2,11 @@
  * YouClip web player (youclip.ca): plays just the shared part of a YouTube video, for anyone
  * and on any device, without the extension.
  * Link format: /watch/<video id>?start=<s>&end=<s>[&title=<clip title>]
- * (_redirects and wrangler.jsonc send every /watch/… address to this page).
+ * (on youclip.ca, worker/index.mjs answers every /watch/… address with this page).
  *
- * Under the video: the clip's range and length, the clip title (when the link has one),
- * the video's own name, and a link to the clip on YouTube.
+ * Under the video: a progress bar with grey dots at the clip's start and end, the clip's
+ * range and length, the clip title (when the link has one), the video's own name, and a
+ * link to the clip on YouTube.
  *
  * It uses YouTube's official IFrame Player API with the privacy-enhanced
  * youtube-nocookie.com player. The clip lives entirely in the link, so nothing is stored.
@@ -65,11 +66,8 @@
   function showOverlay(title, detail, actions) {
     const card = $('overlay-card');
     card.setAttribute('aria-label', title);
-    card.replaceChildren(
-      el('div', 'card-title', title),
-      detail ? el('div', 'card-detail', detail) : null,
-      el('div', 'card-actions', ...actions)
-    );
+    const parts = [el('div', 'card-title', title), detail ? el('div', 'card-detail', detail) : null, el('div', 'card-actions', ...actions)];
+    card.replaceChildren(...parts.filter(Boolean)); // (replaceChildren would print a null as "null")
     card.querySelector('.card-detail')?.setAttribute('dir', 'ltr');
     $('overlay').hidden = false;
   }
@@ -109,6 +107,59 @@
     if (!clip.title) document.title = `${title} · YouClip`;
   }
 
+  // ------------------------------------------- progress bar with the clip's grey dots
+  const bar = {
+    root: $('timeline'),
+    track: $('timeline-track'),
+    clip: $('timeline-clip'),
+    played: $('timeline-played'),
+    head: $('timeline-head'),
+    start: $('marker-start'),
+    end: $('marker-end'),
+  };
+  let playerFailed = false;
+
+  /** The video's length in seconds, or 0 while it's unknown (or while something shorter, like an ad, plays). */
+  function videoLength() {
+    const length = playerFailed ? 0 : Number(player?.getDuration?.()) || 0;
+    return length >= clip.end - 1 ? length : 0;
+  }
+
+  function drawTimeline() {
+    const length = videoLength();
+    bar.root.hidden = !length;
+    if (length) {
+      const at = (seconds) => `${Math.min(100, Math.max(0, (seconds / length) * 100))}%`;
+      const now = Number(player.getCurrentTime?.()) || 0;
+      bar.start.style.left = bar.clip.style.left = at(clip.start);
+      bar.end.style.left = at(clip.end);
+      bar.clip.style.width = at(clip.end - clip.start);
+      bar.played.style.width = bar.head.style.left = at(now);
+    }
+    requestAnimationFrame(drawTimeline);
+  }
+
+  /** Jumps to a moment. Up to the clip's end it's still the clip; past it, the video just plays on. */
+  function jumpTo(seconds) {
+    hideOverlay();
+    if (clipMode && seconds >= clip.end) {
+      clipMode = false;
+      player.loadVideoById({ videoId: clip.videoId, startSeconds: seconds });
+    } else if (clipMode && player.getPlayerState() === window.YT.PlayerState.ENDED) {
+      player.loadVideoById({ videoId: clip.videoId, startSeconds: seconds, endSeconds: clip.end });
+    } else {
+      player.seekTo(seconds, true);
+      player.playVideo();
+    }
+  }
+
+  bar.root.addEventListener('click', (e) => {
+    const length = videoLength();
+    if (!length) return;
+    const rect = bar.track.getBoundingClientRect();
+    jumpTo(Math.max(0, Math.min(length - 0.5, ((e.clientX - rect.left) / rect.width) * length)));
+  });
+
   window.onYouTubeIframeAPIReady = () => {
     player = new window.YT.Player('player', {
       host: 'https://www.youtube-nocookie.com',
@@ -124,7 +175,10 @@
         origin: location.origin,
       },
       events: {
-        onReady: showTitle,
+        onReady() {
+          showTitle();
+          requestAnimationFrame(drawTimeline);
+        },
         onStateChange(e) {
           const { PLAYING, ENDED } = window.YT.PlayerState;
           if (e.data === PLAYING) {
@@ -136,6 +190,7 @@
         },
         // e.g. the owner doesn't allow playing the video outside youtube.com
         onError() {
+          playerFailed = true;
           const link = el('a', 'btn primary', t('watchOnYouTube'));
           link.href = youtubeUrl;
           link.target = '_blank';

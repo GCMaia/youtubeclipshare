@@ -122,8 +122,71 @@ body {
   outline-offset: 2px;
 }
 
+/* Progress bar under the video: red progress and playhead, grey dots at the clip's start and end. */
+.timeline {
+  position: relative;
+  height: 24px;
+  margin-top: 6px;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 50%;
+  right: 7px;
+  left: 7px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-50%);
+  transition: height 0.1s;
+}
+
+.timeline:hover .timeline-track {
+  height: 6px;
+}
+
+/* The clip's part of the video, slightly lighter. */
+.timeline-clip {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.timeline-played {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 2px;
+  background: #ff0033;
+}
+
+.timeline-marker,
+.timeline-head {
+  position: absolute;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.timeline-marker {
+  width: 11px;
+  height: 11px;
+  background: #b5b5b5;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.35);
+}
+
+.timeline-head {
+  width: 13px;
+  height: 13px;
+  background: #ff0033;
+}
+
 .details {
-  margin-top: 16px;
+  margin-top: 10px;
 }
 
 .clip-label {
@@ -215,5 +278,10 @@ body {
 
   .details {
     padding: 0 16px;
+  }
+
+  /* The video goes edge to edge on phones; keep the bar's dots off the screen edge. */
+  .timeline {
+    margin: 6px 9px 0;
   }
 }

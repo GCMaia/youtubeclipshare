@@ -83,9 +83,9 @@ change keeps its old preview.
 
 **How youclip.ca is hosted.** `web/` is a static site, served by a Cloudflare Worker named
 `youtubeclip` (free plan). The Worker is connected to this GitHub repository, so **every push to `main`
-updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to serve the `web/`
-folder, and to send `/watch/…` clip pages through `worker/index.mjs`, which adds the link preview
-to `index.html`. The free plan allows 100,000 clip page views a day; files like the player script
+updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to serve the files in
+`web/` directly and to send every other address, which means the `/watch/…` clip pages, to
+`worker/index.mjs`, which answers with `index.html` plus the link preview. The free plan allows 100,000 clip page views a day; files like the player script
 and icons don't count.
 
 To try the Worker on your computer: `npx wrangler dev`, then open
@@ -107,8 +107,10 @@ Setting it up (one time):
 Leave Web Analytics turned off. The privacy policy says the page has no analytics.
 
 Shared links use `youclip.ca`, not the `workers.dev` address, so you could move to another host
-later without breaking links already sent. Any static host that supports a `_redirects` file can
-serve the player; only the link previews need the Worker.
+later without breaking links already sent. Any static host can serve the player if it rewrites
+`/watch/*` to `index.html` (on Netlify, a `_redirects` file with `/watch/*  /  200`). Only the link
+previews need the Worker. Don't add that file here: on Cloudflare it would answer clip pages before
+the Worker gets to add the preview.
 
 The build command regenerates the copies in `web/` on every deploy. Still run
 `node tools/build-site.mjs` after changing `src/clip-utils.js`, `_locales/` or `icons/`, because the

@@ -1,2 +1,0 @@
-# Clip links (/watch/<video id>?start=…&end=…) all load the same page (index.html); player.js reads the URL.
-/watch/*  /  200

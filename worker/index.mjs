@@ -1,7 +1,7 @@
-// Cloudflare Worker for youclip.ca. Everything is a static file from web/, except clip pages
-// (/watch/<video id>?start=…&end=…[&title=…], see run_worker_first in wrangler.jsonc): for those
-// it serves web/index.html with the link preview tags filled in (title, description, thumbnail),
-// because chat apps read those tags without running the page's JavaScript.
+// Cloudflare Worker for youclip.ca. Files in web/ are served directly by Cloudflare; every other
+// address comes here. Clip pages (/watch/<video id>?start=…&end=…[&title=…]) get web/index.html
+// with the link preview tags filled in (title, description, thumbnail), because chat apps read
+// those tags without running the page's JavaScript.
 //
 // To fill them in it asks YouTube for the video's public title and checks which thumbnail size
 // exists. Both answers are cached at Cloudflare for a day, and both give up after 2 seconds,

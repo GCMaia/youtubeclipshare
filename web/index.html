@@ -32,6 +32,19 @@
         </div>
       </div>
 
+      <!-- The whole video's progress, with grey dots where the clip starts and ends (like the
+           extension draws on YouTube). YouTube's own progress bar is inside its player frame,
+           which the page can't draw on. Click to jump; shown once the video's length is known. -->
+      <div id="timeline" class="timeline" dir="ltr" aria-hidden="true" hidden>
+        <div id="timeline-track" class="timeline-track">
+          <div id="timeline-clip" class="timeline-clip"></div>
+          <div id="timeline-played" class="timeline-played"></div>
+          <span id="marker-start" class="timeline-marker"></span>
+          <span id="marker-end" class="timeline-marker"></span>
+          <span id="timeline-head" class="timeline-head"></span>
+        </div>
+      </div>
+
       <!-- Clip length and range, the clip's own title (if it has one), the video's name, a link to YouTube. -->
       <div id="details" class="details">
         <span class="clip-label">
