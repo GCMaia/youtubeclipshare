@@ -1,9 +1,9 @@
 // Cloudflare Workers settings for the web player at https://youclip.ca/.
 // It only serves the static files in web/; there is no server code.
 // Cloudflare's GitHub integration (Workers Builds) runs `node tools/build-site.mjs` and then
-// `npx wrangler deploy` on every push to main. The Worker in the dashboard must be named "youclip".
+// `npx wrangler deploy` on every push to main. The Worker in the dashboard must be named "youtubeclip".
 {
-  "name": "youclip",
+  "name": "youtubeclip",
   "compatibility_date": "2026-10-01",
   "assets": {
     "directory": "./web",

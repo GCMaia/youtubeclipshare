@@ -70,7 +70,7 @@ Two limits come from YouTube: videos whose owners turned off embedding can't pla
 video's thumbnail.
 
 **How youclip.ca is hosted.** `web/` is a plain static site, served by a Cloudflare Worker named
-`youclip` (free plan). The Worker is connected to this GitHub repository, so **every push to `main`
+`youtubeclip` (free plan). The Worker is connected to this GitHub repository, so **every push to `main`
 updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to serve the `web/`
 folder and to answer `/watch/…` links with `index.html`.
 
@@ -78,7 +78,7 @@ Setting it up (one time):
 
 1. In the Cloudflare dashboard, open **Workers & Pages → Create → Continue with GitHub** and pick this
    repository. If it isn't listed, give Cloudflare's GitHub app access to it.
-2. Name the Worker `youclip`, the same as `name` in `wrangler.jsonc`, or the build fails. Use these
+2. Name the Worker `youtubeclip`, the same as `name` in `wrangler.jsonc`, or the build fails. Use these
    settings:
    - Build command: `node tools/build-site.mjs`
    - Deploy command: `npx wrangler deploy`
