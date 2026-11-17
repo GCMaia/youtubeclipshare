@@ -1,7 +1,8 @@
-// Cloudflare Worker for youclip.ca. Files in web/ are served directly by Cloudflare; every other
-// address comes here. Clip pages (/watch/<video id>?start=…&end=…[&title=…]) get web/index.html
-// with the link preview tags filled in (title, description, thumbnail), because chat apps read
-// those tags without running the page's JavaScript.
+// Cloudflare Worker for youclip.ca. Files in web/ are served directly by Cloudflare (the home page
+// is web/index.html); every other address comes here. Clip pages
+// (/watch/<video id>?start=…&end=…[&title=…]) get the player page, web/watch.html, with the link
+// preview tags filled in (title, description, thumbnail), because chat apps read those tags
+// without running the page's JavaScript.
 //
 // To fill them in it asks YouTube for the video's public title and checks which thumbnail size
 // exists. Both answers are cached at Cloudflare for a day, and both give up after 2 seconds,
@@ -43,7 +44,7 @@ export default {
     if (!isClipPage) return env.ASSETS.fetch(request);
 
     const clip = C.parseWebClipUrl(url.href);
-    const page = env.ASSETS.fetch(new URL('/', url)); // web/index.html
+    const page = env.ASSETS.fetch(new URL('/watch', url)); // web/watch.html, the player
     if (!clip) return page; // the page itself explains that the link is broken
 
     const [html, video, thumbnail] = await Promise.all([page, lookUpVideo(clip.videoId), pickThumbnail(clip.videoId)]);
@@ -51,7 +52,7 @@ export default {
     const p = clipPreview({ clip, origin: url.origin, video, thumbnail });
 
     const headers = new Headers(html.headers);
-    headers.delete('etag'); // the body differs from index.html's
+    headers.delete('etag'); // the body differs from watch.html's
     headers.delete('content-length');
     const response = new HTMLRewriter()
       .on('title', { element: (el) => el.setInnerContent(p.pageTitle) })

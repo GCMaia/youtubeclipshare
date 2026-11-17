@@ -2,3 +2,5 @@ dist/
 # Local Cloudflare (wrangler) files
 .wrangler/
 node_modules/
+# Store screenshots (taken from a personal YouTube account; uploaded to the store by hand)
+store/screenshots/

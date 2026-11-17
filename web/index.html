@@ -1,18 +1,15 @@
 <!doctype html>
+<!-- youclip.ca home page. Clip links (/watch/…) are served by watch.html through worker/index.mjs. -->
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- YouTube's player needs to know which site embeds it. -->
-    <meta name="referrer" content="strict-origin-when-cross-origin" />
-    <!-- Link preview. On youclip.ca, worker/index.mjs fills these in for each clip
-         (clip title, range, video thumbnail); the values here are the fallback. -->
     <title>YouClip</title>
-    <meta name="description" content="A YouTube clip shared with YouClip. It plays just the part of the video that was shared." />
-    <meta property="og:title" content="A YouTube clip, shared with YouClip" />
+    <meta name="description" content="YouClip shares the exact part of a YouTube video you mean. A personal, free and open-source project." />
+    <meta property="og:title" content="YouClip" />
     <meta property="og:site_name" content="YouClip" />
-    <meta property="og:description" content="Plays just the part of the video that was shared." />
-    <meta property="og:type" content="video.other" />
+    <meta property="og:description" content="Share the exact part of a YouTube video you mean. A personal, free and open-source project." />
+    <meta property="og:type" content="website" />
     <meta property="og:url" content="https://youclip.ca/" />
     <meta property="og:image" content="https://youclip.ca/icon128.png" />
     <meta property="og:image:width" content="128" />
@@ -22,54 +19,42 @@
     <meta name="theme-color" content="#0b0b0b" />
     <link rel="icon" href="/icon48.png" />
     <link rel="stylesheet" href="/player.css" />
+    <script>
+      // Older clip links in the /?v=<id>&t=<start>&end=<end> form go to the player.
+      (function () {
+        var query = new URLSearchParams(location.search);
+        var id = query.get('v');
+        if (id && /^[\w-]{11}$/.test(id) && query.get('end')) {
+          query.delete('v');
+          location.replace('/watch/' + id + '?' + query.toString());
+        }
+      })();
+    </script>
   </head>
   <body>
-    <main id="stage" class="stage">
-      <div class="frame">
-        <div id="player"></div>
-        <div id="overlay" class="overlay" hidden>
-          <div id="overlay-card" class="card" role="dialog"></div>
-        </div>
-      </div>
+    <main class="home">
+      <h1 class="home-logo"><img src="/icon128.png" alt="YouClip" width="112" height="112" /></h1>
+      <p class="home-lead">YouClip is a personal, free and open-source project.</p>
 
-      <!-- The whole video's progress, with grey dots where the clip starts and ends (like the
-           extension draws on YouTube). YouTube's own progress bar is inside its player frame,
-           which the page can't draw on. Click to jump; shown once the video's length is known. -->
-      <div id="timeline" class="timeline" dir="ltr" aria-hidden="true" hidden>
-        <div id="timeline-track" class="timeline-track">
-          <div id="timeline-clip" class="timeline-clip"></div>
-          <div id="timeline-played" class="timeline-played"></div>
-          <span id="marker-start" class="timeline-marker"></span>
-          <span id="marker-end" class="timeline-marker"></span>
-          <span id="timeline-head" class="timeline-head"></span>
-        </div>
-      </div>
-
-      <!-- Clip length and range, the clip's own title (if it has one), the video's name, a link to YouTube. -->
-      <div id="details" class="details">
-        <span class="clip-label">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
-            <path d="M9.64 7.64c.23-.5.36-1.05.36-1.64 0-2.21-1.79-4-4-4S2 3.79 2 6s1.79 4 4 4c.59 0 1.14-.13 1.64-.36L10 12l-2.36 2.36C7.14 14.13 6.59 14 6 14c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4c0-.59-.13-1.14-.36-1.64L12 14l7 7h3v-1L9.64 7.64zM6 8c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm0 12c-1.1 0-2-.89-2-2s.9-2 2-2 2 .89 2 2-.9 2-2 2zm6-7.5c-.28 0-.5-.22-.5-.5s.22-.5.5-.5.5.22.5.5-.22.5-.5.5zM19 3l-6 6 2 2 7-7V3h-3z" />
-          </svg>
-          <span id="clip-label" dir="ltr"></span>
-          <span class="clip-sep" aria-hidden="true">·</span>
-          <span id="clip-length" dir="auto"></span>
-        </span>
-        <h1 id="clip-title" class="clip-title" dir="auto" hidden></h1>
-        <h2 id="title" class="title" dir="auto"></h2>
-        <a id="yt-link" class="yt-link" target="_blank" rel="noopener"></a>
-      </div>
+      <p class="home-intro">Some links you might be interested in:</p>
+      <ul class="home-links">
+        <li>
+          <span class="home-label">Add YouClip as an extension to start sharing</span>
+          <span class="home-soon">Coming soon</span>
+        </li>
+        <li>
+          <span class="home-label">Privacy</span>
+          <a href="/privacy">Privacy policy</a>
+        </li>
+        <li>
+          <span class="home-label">Project</span>
+          <a href="https://github.com/GCMaia/youtubeclipshare" rel="noopener">Source code on GitHub</a>
+        </li>
+      </ul>
     </main>
 
-    <p id="message" class="message" hidden></p>
-
-    <footer class="footer">
-      <img src="/icon48.png" alt="" width="16" height="16" />
-      <span>YouClip</span>
+    <footer class="home-footer">
+      <a class="pizza" href="https://buymeacoffee.com/gcmaia" rel="noopener"><span aria-hidden="true">🍕</span> Buy me a pizza</a>
     </footer>
-
-    <script src="/clip-utils.js"></script>
-    <script src="/strings.js"></script>
-    <script src="/player.js"></script>
   </body>
 </html>

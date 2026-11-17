@@ -1,4 +1,6 @@
-// Generates icons/icon{16,32,48,128}.png: a "[ ▶ ]" clip mark on an indigo tile.
+// Generates icons/icon{16,32,48,128}.png: a "[ ▶ ]" clip mark on an indigo tile, and
+// store/store-icon-128.png: the same at 96x96 with 16px of transparent space around it, as the
+// Chrome Web Store asks for its listing icon.
 // Run with: node tools/make-icons.mjs   (no dependencies)
 import { deflateSync, crc32 } from 'node:zlib';
 import { mkdirSync, writeFileSync } from 'node:fs';
@@ -37,15 +39,16 @@ function sample(x, y) {
   return TOP.map((c, i) => Math.round(c + (BOTTOM[i] - c) * t));
 }
 
-function render(size) {
+/** Renders a size×size PNG, with `padding` transparent pixels around the artwork. */
+function render(size, padding = 0) {
   const pixels = Buffer.alloc(size * size * 4);
-  const scale = 128 / size;
+  const scale = 128 / (size - 2 * padding);
   for (let py = 0; py < size; py++) {
     for (let px = 0; px < size; px++) {
       let r = 0, g = 0, b = 0, covered = 0;
       for (let sy = 0; sy < SAMPLES; sy++) {
         for (let sx = 0; sx < SAMPLES; sx++) {
-          const color = sample((px + (sx + 0.5) / SAMPLES) * scale, (py + (sy + 0.5) / SAMPLES) * scale);
+          const color = sample((px - padding + (sx + 0.5) / SAMPLES) * scale, (py - padding + (sy + 0.5) / SAMPLES) * scale);
           if (!color) continue;
           r += color[0]; g += color[1]; b += color[2]; covered++;
         }
@@ -94,3 +97,6 @@ for (const size of SIZES) {
   writeFileSync(new URL(`icon${size}.png`, OUT_URL), render(size));
   console.log(`icons/icon${size}.png`);
 }
+
+writeFileSync(new URL('../store/store-icon-128.png', import.meta.url), render(128, 16));
+console.log('store/store-icon-128.png');

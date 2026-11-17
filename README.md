@@ -85,8 +85,17 @@ change keeps its old preview.
 `youtubeclip` (free plan). The Worker is connected to this GitHub repository, so **every push to `main`
 updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to serve the files in
 `web/` directly and to send every other address, which means the `/watch/…` clip pages, to
-`worker/index.mjs`, which answers with `index.html` plus the link preview. The free plan allows 100,000 clip page views a day; files like the player script
-and icons don't count.
+`worker/index.mjs`, which answers with the player page (`watch.html`) plus the link preview. The free
+plan allows 100,000 clip page views a day; files like the player script and icons don't count.
+
+The site's pages:
+- `/`: the home page (`web/index.html`), with links to the extension, the privacy policy, this
+  repository and the "Buy me a pizza" page. Old-style clip links (`/?v=…&t=…&end=…`) are sent on
+  to the player.
+- `/watch/…`: the clip player (`web/watch.html`, `player.js`, `player.css`).
+- `/privacy`: the privacy policy, generated from `store/privacy-policy.md`.
+
+When the extension is approved, replace "Coming soon" on the home page with its Chrome Web Store link.
 
 To try the Worker on your computer: `npx wrangler dev`, then open
 http://127.0.0.1:8787/watch/dQw4w9WgXcQ?start=43&end=50.
@@ -108,7 +117,7 @@ Leave Web Analytics turned off. The privacy policy says the page has no analytic
 
 Shared links use `youclip.ca`, not the `workers.dev` address, so you could move to another host
 later without breaking links already sent. Any static host can serve the player if it rewrites
-`/watch/*` to `index.html` (on Netlify, a `_redirects` file with `/watch/*  /  200`). Only the link
+`/watch/*` to `watch.html` (on Netlify, a `_redirects` file with `/watch/*  /watch.html  200`). Only the link
 previews need the Worker. Don't add that file here: on Cloudflare it would answer clip pages before
 the Worker gets to add the preview.
 
