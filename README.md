@@ -113,8 +113,9 @@ previews need the Worker. Don't add that file here: on Cloudflare it would answe
 the Worker gets to add the preview.
 
 The build command regenerates the copies in `web/` on every deploy. Still run
-`node tools/build-site.mjs` after changing `src/clip-utils.js`, `_locales/` or `icons/`, because the
-tests fail until the copies in the repository are up to date.
+`node tools/build-site.mjs` after changing `src/clip-utils.js`, `_locales/`, `icons/` or
+`store/privacy-policy.md`, because the tests fail until the copies in the repository are up to date.
+The privacy policy is published as https://youclip.ca/privacy (`web/privacy.html`).
 
 ## Languages
 
@@ -135,12 +136,14 @@ To try another language, start Chrome with a different language. On Windows:
 
 ## Publishing
 
-1. Raise `version` in `manifest.json`. Each upload needs a higher version than the last one.
+1. For an update, raise `version` in `manifest.json`. Each upload needs a higher version than the
+   last one. The first upload can stay at 1.0.0.
 2. Run `node --test`, then `node tools/package.mjs`. This creates `dist/youclip-<version>.zip`
    with only the files the extension needs.
 3. Upload the zip in the [Chrome Web Store Developer Dashboard](https://chrome.google.com/webstore/devconsole).
-   `store/listing.md` has the text for every dashboard field. `store/privacy-policy.md` is the
-   privacy policy.
+   `store/listing.md` walks through every dashboard field, with the text to paste. The privacy
+   policy URL is https://youclip.ca/privacy. The promo tile is `store/promo-tile-440x280.png`.
+   You take the screenshots yourself (see `store/listing.md`).
 
 ## Project layout
 
@@ -154,7 +157,8 @@ To try another language, start Chrome with a different language. On Windows:
 | `_locales/` | Translations of all text, one folder per language. |
 | `tools/make-icons.mjs` | Regenerates `icons/*.png` (`node tools/make-icons.mjs`). |
 | `tools/package.mjs` | Builds the store upload zip into `dist/`. |
-| `web/` | The web player for "Link for everyone" links: a static site to upload to any static host. `clip-utils.js`, `strings.js` and the icons in it are generated. |
+| `tools/make-promo-tile.mjs` | Renders the store's promo tile from `store/promo-tile.html` (needs Edge or Chrome). |
+| `web/` | The web player for "Link for everyone" links: a static site to upload to any static host. `clip-utils.js`, `strings.js`, `privacy.html` and the icons in it are generated. |
 | `tools/build-site.mjs` | Updates the generated files in `web/` (`node tools/build-site.mjs`). |
 | `wrangler.jsonc` | Cloudflare settings for hosting `web/` at youclip.ca. |
 | `worker/` | The Cloudflare Worker that adds link previews (title, thumbnail) to clip pages. |

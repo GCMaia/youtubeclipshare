@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- Source of store/promo-tile-440x280.png (the Chrome Web Store's small promo tile).
+     To regenerate: node tools/make-promo-tile.mjs -->
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      html,
+      body {
+        margin: 0;
+        background: #0b0b0b;
+      }
+
+      .tile {
+        position: relative;
+        width: 440px;
+        height: 280px;
+        overflow: hidden;
+        background: radial-gradient(130% 150% at 0% 0%, #3a36a8 0%, #1b1946 42%, #0b0b12 100%);
+        color: #f4f4ff;
+        font-family: "Segoe UI", Roboto, system-ui, sans-serif;
+      }
+
+      .brand {
+        position: absolute;
+        top: 34px;
+        left: 32px;
+        display: flex;
+        align-items: center;
+        gap: 14px;
+      }
+
+      .brand img {
+        width: 58px;
+        height: 58px;
+      }
+
+      .name {
+        font-size: 42px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+      }
+
+      .tagline {
+        position: absolute;
+        top: 118px;
+        left: 32px;
+        width: 360px;
+        margin: 0;
+        color: #d6d5f2;
+        font-size: 20px;
+        line-height: 1.35;
+      }
+
+      /* A clip on a progress bar: the extension's grey dots at the start and end. */
+      .bar {
+        position: absolute;
+        right: 34px;
+        bottom: 46px;
+        left: 34px;
+        height: 6px;
+        border-radius: 3px;
+        background: rgba(255, 255, 255, 0.18);
+      }
+
+      .clip {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 34%;
+        width: 30%;
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      .played {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 49%;
+        border-radius: 3px;
+        background: #8b87ff;
+      }
+
+      .dot,
+      .head {
+        position: absolute;
+        top: 50%;
+        border-radius: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .dot {
+        width: 15px;
+        height: 15px;
+        background: #c4c4c4;
+        box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35);
+      }
+
+      .head {
+        width: 18px;
+        height: 18px;
+        background: #ffffff;
+        box-shadow: 0 0 0 4px rgba(139, 135, 255, 0.45);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tile">
+      <div class="brand">
+        <img src="../icons/icon128.png" alt="" />
+        <span class="name">YouClip</span>
+      </div>
+      <p class="tagline">Share the exact part of a video you mean, not the whole thing.</p>
+      <div class="bar">
+        <div class="clip"></div>
+        <div class="played"></div>
+        <span class="dot" style="left: 34%"></span>
+        <span class="dot" style="left: 64%"></span>
+        <span class="head" style="left: 49%"></span>
+      </div>
+    </div>
+  </body>
+</html>

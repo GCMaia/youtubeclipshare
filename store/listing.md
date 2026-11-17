@@ -4,6 +4,19 @@ Text to paste into the [Chrome Web Store Developer Dashboard](https://chrome.goo
 section by section. The name and short summary come from the extension itself (in all its languages),
 so they aren't entered here.
 
+## Before you start (one time)
+
+1. Sign in to the dashboard with the Google account that should own the extension. Accept the
+   developer agreement and pay the one-time registration fee (US$5 at the time of writing).
+2. In **Account**, set and verify the contact email. Google uses it to contact you; it isn't shown on
+   the store unless you choose to show it.
+3. If it asks whether you're a trader (EU rules): a free extension with no business behind it is
+   usually **non-trader**.
+
+Before submitting, check that these work, because reviewers may open them:
+- https://youclip.ca/watch/dQw4w9WgXcQ?start=43&end=50&title=Test (plays 0:43–0:50)
+- https://youclip.ca/privacy (the privacy policy)
+
 ---
 
 ## Package tab
@@ -18,8 +31,7 @@ Upload `dist/youclip-<version>.zip` (build it with `node tools/package.mjs`).
 
 **Language:** English (add Portuguese (Brazil) as a second listing language and use the text below)
 
-> "Link for everyone" / "Link para todos" links go to https://youclip.ca/. Before you submit, check
-> that a link like https://youclip.ca/watch/dQw4w9WgXcQ?start=43&end=50 plays. Reviewers may try it.
+**Support URL** (if the form asks): https://github.com/GCMaia/youtubeclipshare/issues
 
 ### Description — English
 
@@ -34,7 +46,7 @@ When someone with YouClip opens your link:
 • the rest of the page dims, so the clip gets the spotlight
 • the video pauses at your end time, with buttons to replay the clip or keep watching
 
-Sending it to someone who doesn't have YouClip, or who'll open it on a phone? Pick "Link for everyone". It opens a simple page that plays just that part of the video, on any device, with nothing to install.
+Sending it to someone who doesn't have YouClip, or who'll open it on a phone? Pick "Link for everyone". It opens a simple page that plays just that part of the video, on any device, with nothing to install. Pasted in a chat, the link shows your clip's title and the video's thumbnail.
 
 Also:
 • Give your clip a title (optional). It shows above the video on the clip's page
@@ -61,7 +73,7 @@ Quando alguém com o YouClip abre o seu link:
 • o resto da página escurece, deixando o clipe em destaque
 • o vídeo pausa no tempo final, com botões para repetir o clipe ou continuar assistindo
 
-Vai mandar para alguém que não tem o YouClip, ou que vai abrir no celular? Escolha "Link para todos". Ele abre uma página simples que reproduz só aquele trecho do vídeo, em qualquer aparelho, sem precisar instalar nada.
+Vai mandar para alguém que não tem o YouClip, ou que vai abrir no celular? Escolha "Link para todos". Ele abre uma página simples que reproduz só aquele trecho do vídeo, em qualquer aparelho, sem precisar instalar nada. Colado numa conversa, o link mostra o título do clipe e a miniatura do vídeo.
 
 Também:
 • Dê um título ao seu clipe (opcional). Ele aparece acima do vídeo na página do clipe
@@ -86,7 +98,8 @@ O YouClip não é afiliado nem endossado pelo YouTube ou pelo Google.
 
   Tip: in Brave/Chrome press F12 → toggle the device toolbar (Ctrl+Shift+M) → set the size to
   1280 × 800 → ⋮ menu → **Capture screenshot**. That gives an exact 1280×800 image of the page.
-- **Small promo tile (440×280):** optional.
+- **Small promo tile (440×280):** `store/promo-tile-440x280.png` (regenerate it from
+  `store/promo-tile.html` with `node tools/make-promo-tile.mjs`).
 
 ---
 
@@ -117,8 +130,9 @@ Remembers which kind of clip link the user prefers: a link to the YouClip web pl
 - I do not use or transfer user data for purposes that are unrelated to my item's single purpose
 - I do not use or transfer user data to determine creditworthiness or for lending purposes
 
-**Privacy policy URL:** optional, because no user data is collected. To add one anyway, publish
-`store/privacy-policy.md` somewhere public (for example, as a page on youclip.ca) and paste its link.
+**Privacy policy URL:** https://youclip.ca/privacy (generated from `store/privacy-policy.md` by
+`node tools/build-site.mjs`). Before submitting, turn off Cloudflare Web Analytics for youclip.ca,
+because the policy says the page has no analytics.
 
 ---
 

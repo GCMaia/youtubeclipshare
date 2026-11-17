@@ -844,8 +844,6 @@
       root.style.visibility = '';
       root.style.left = root.style.top = '';
       root.dataset.pos = '';
-      const height = `${Math.round(document.getElementById('movie_player').getBoundingClientRect().height)}px`;
-      if (root.style.minHeight !== height) root.style.minHeight = height; // as tall as the video
       return;
     }
 
@@ -853,7 +851,6 @@
     root.style.visibility = performance.now() < dockWaitUntil ? 'hidden' : '';
     if (root.parentElement !== document.body) document.body.append(root);
     root.classList.remove('ytcs-docked');
-    root.style.minHeight = '';
 
     const r = pickerButton.getBoundingClientRect();
     if (!r.width) return; // button briefly hidden while YouTube re-lays out

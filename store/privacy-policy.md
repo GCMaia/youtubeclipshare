@@ -23,4 +23,4 @@ YouClip does not collect, store, sell or share any personal information or brows
 
 If this policy changes, the new version will be posted here with a new date.
 
-Questions: <!-- TODO: add a contact address or a link to the project's issue tracker before publishing -->
+Questions: open an issue at [github.com/GCMaia/youtubeclipshare/issues](https://github.com/GCMaia/youtubeclipshare/issues).

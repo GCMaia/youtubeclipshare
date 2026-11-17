@@ -130,10 +130,11 @@ html[dark] .ytcs-picker.ytcs-docked,
   margin-bottom: 16px;
 }
 
-/* The note sits at the bottom of the panel, like the old clip studio's buttons. */
+/* The panel is only as tall as its content, so the note sits right under the link. */
 .ytcs-docked .ytcs-hint {
-  margin-top: auto;
-  padding-top: 16px;
+  margin-top: 14px;
+  font-size: 13px;
+  line-height: 18px;
 }
 
 .ytcs-picker *,
