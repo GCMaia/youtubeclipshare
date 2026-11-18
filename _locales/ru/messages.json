@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Это видео нельзя воспроизвести здесь."
   },
+  "siteGetExtension": {
+    "message": "Делитесь своими фрагментами с помощью расширения YouClip"
+  },
   "clipButton": {
     "message": "Фрагмент"
   },

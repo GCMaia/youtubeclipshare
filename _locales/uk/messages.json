@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Це відео не можна відтворити тут."
   },
+  "siteGetExtension": {
+    "message": "Діліться власними фрагментами за допомогою розширення YouClip"
+  },
   "clipButton": {
     "message": "Фрагмент"
   },

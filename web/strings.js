@@ -9,7 +9,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "متابعة المشاهدة",
     "watchOnYouTube": "المشاهدة على YouTube",
     "siteInvalidLink": "رابط المقطع هذا غير مكتمل أو تالف. اطلب رابطًا جديدًا من الشخص الذي أرسله.",
-    "siteCantEmbed": "لا يمكن تشغيل هذا الفيديو هنا."
+    "siteCantEmbed": "لا يمكن تشغيل هذا الفيديو هنا.",
+    "siteGetExtension": "شارك مقاطعك الخاصة باستخدام إضافة YouClip"
   },
   "de": {
     "lang": "de",
@@ -20,7 +21,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Weiterschauen",
     "watchOnYouTube": "Auf YouTube ansehen",
     "siteInvalidLink": "Dieser Clip-Link ist unvollständig oder fehlerhaft. Bitte die Person, die ihn geschickt hat, um einen neuen.",
-    "siteCantEmbed": "Dieses Video kann hier nicht abgespielt werden."
+    "siteCantEmbed": "Dieses Video kann hier nicht abgespielt werden.",
+    "siteGetExtension": "Teile eigene Clips mit der YouClip-Erweiterung"
   },
   "en": {
     "lang": "en",
@@ -31,7 +33,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Keep watching",
     "watchOnYouTube": "Watch on YouTube",
     "siteInvalidLink": "This clip link is incomplete or broken. Ask the person who sent it for a new one.",
-    "siteCantEmbed": "This video can’t be played here."
+    "siteCantEmbed": "This video can’t be played here.",
+    "siteGetExtension": "Share your own clips with the YouClip extension"
   },
   "es": {
     "lang": "es",
@@ -42,7 +45,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Seguir viendo",
     "watchOnYouTube": "Ver en YouTube",
     "siteInvalidLink": "Este enlace de clip está incompleto o dañado. Pide uno nuevo a quien te lo envió.",
-    "siteCantEmbed": "Este video no se puede reproducir aquí."
+    "siteCantEmbed": "Este video no se puede reproducir aquí.",
+    "siteGetExtension": "Comparte tus propios clips con la extensión YouClip"
   },
   "fr": {
     "lang": "fr",
@@ -53,7 +57,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Continuer",
     "watchOnYouTube": "Regarder sur YouTube",
     "siteInvalidLink": "Ce lien d’extrait est incomplet ou endommagé. Demandez-en un nouveau à la personne qui vous l’a envoyé.",
-    "siteCantEmbed": "Cette vidéo ne peut pas être lue ici."
+    "siteCantEmbed": "Cette vidéo ne peut pas être lue ici.",
+    "siteGetExtension": "Partagez vos propres extraits avec l’extension YouClip"
   },
   "hi": {
     "lang": "hi",
@@ -64,7 +69,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "देखना जारी रखें",
     "watchOnYouTube": "YouTube पर देखें",
     "siteInvalidLink": "यह क्लिप लिंक अधूरा या खराब है। भेजने वाले से नया लिंक मांगें।",
-    "siteCantEmbed": "यह वीडियो यहां नहीं चलाया जा सकता।"
+    "siteCantEmbed": "यह वीडियो यहां नहीं चलाया जा सकता।",
+    "siteGetExtension": "YouClip एक्सटेंशन से अपनी क्लिप शेयर करें"
   },
   "id": {
     "lang": "id",
@@ -75,7 +81,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Lanjut menonton",
     "watchOnYouTube": "Tonton di YouTube",
     "siteInvalidLink": "Link klip ini tidak lengkap atau rusak. Minta link baru kepada pengirimnya.",
-    "siteCantEmbed": "Video ini tidak dapat diputar di sini."
+    "siteCantEmbed": "Video ini tidak dapat diputar di sini.",
+    "siteGetExtension": "Bagikan klip Anda sendiri dengan ekstensi YouClip"
   },
   "it": {
     "lang": "it",
@@ -86,7 +93,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Continua a guardare",
     "watchOnYouTube": "Guarda su YouTube",
     "siteInvalidLink": "Questo link della clip è incompleto o danneggiato. Chiedine uno nuovo a chi te l’ha inviato.",
-    "siteCantEmbed": "Questo video non può essere riprodotto qui."
+    "siteCantEmbed": "Questo video non può essere riprodotto qui.",
+    "siteGetExtension": "Condividi le tue clip con l’estensione YouClip"
   },
   "ja": {
     "lang": "ja",
@@ -97,7 +105,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "続きを見る",
     "watchOnYouTube": "YouTube で見る",
     "siteInvalidLink": "このクリップのリンクは不完全か壊れています。送信者に新しいリンクを依頼してください。",
-    "siteCantEmbed": "この動画はここでは再生できません。"
+    "siteCantEmbed": "この動画はここでは再生できません。",
+    "siteGetExtension": "YouClip 拡張機能で、自分のクリップを共有できます"
   },
   "ko": {
     "lang": "ko",
@@ -108,7 +117,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "계속 보기",
     "watchOnYouTube": "YouTube에서 보기",
     "siteInvalidLink": "이 클립 링크가 불완전하거나 손상되었습니다. 보낸 사람에게 새 링크를 요청하세요.",
-    "siteCantEmbed": "이 동영상은 여기에서 재생할 수 없습니다."
+    "siteCantEmbed": "이 동영상은 여기에서 재생할 수 없습니다.",
+    "siteGetExtension": "YouClip 확장 프로그램으로 나만의 클립을 공유하세요"
   },
   "nl": {
     "lang": "nl",
@@ -119,7 +129,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Verder kijken",
     "watchOnYouTube": "Bekijken op YouTube",
     "siteInvalidLink": "Deze cliplink is onvolledig of beschadigd. Vraag de afzender om een nieuwe.",
-    "siteCantEmbed": "Deze video kan hier niet worden afgespeeld."
+    "siteCantEmbed": "Deze video kan hier niet worden afgespeeld.",
+    "siteGetExtension": "Deel je eigen clips met de YouClip-extensie"
   },
   "pl": {
     "lang": "pl",
@@ -130,7 +141,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Oglądaj dalej",
     "watchOnYouTube": "Obejrzyj na YouTube",
     "siteInvalidLink": "Ten link do klipu jest niekompletny lub uszkodzony. Poproś nadawcę o nowy.",
-    "siteCantEmbed": "Tego filmu nie można tu odtworzyć."
+    "siteCantEmbed": "Tego filmu nie można tu odtworzyć.",
+    "siteGetExtension": "Udostępniaj własne klipy dzięki rozszerzeniu YouClip"
   },
   "pt_BR": {
     "lang": "pt-BR",
@@ -141,7 +153,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Continuar assistindo",
     "watchOnYouTube": "Assistir no YouTube",
     "siteInvalidLink": "Este link de clipe está incompleto ou quebrado. Peça um novo para quem enviou.",
-    "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui."
+    "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui.",
+    "siteGetExtension": "Compartilhe seus próprios clipes com a extensão YouClip"
   },
   "pt_PT": {
     "lang": "pt-PT",
@@ -152,7 +165,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Continuar a ver",
     "watchOnYouTube": "Ver no YouTube",
     "siteInvalidLink": "Este link de clip está incompleto ou danificado. Peça um novo a quem o enviou.",
-    "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui."
+    "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui.",
+    "siteGetExtension": "Partilhe os seus próprios clips com a extensão YouClip"
   },
   "ru": {
     "lang": "ru",
@@ -163,7 +177,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Смотреть дальше",
     "watchOnYouTube": "Смотреть на YouTube",
     "siteInvalidLink": "Эта ссылка на фрагмент неполная или повреждена. Попросите отправителя прислать новую.",
-    "siteCantEmbed": "Это видео нельзя воспроизвести здесь."
+    "siteCantEmbed": "Это видео нельзя воспроизвести здесь.",
+    "siteGetExtension": "Делитесь своими фрагментами с помощью расширения YouClip"
   },
   "tr": {
     "lang": "tr",
@@ -174,7 +189,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "İzlemeye devam et",
     "watchOnYouTube": "YouTube’da izle",
     "siteInvalidLink": "Bu klip bağlantısı eksik veya bozuk. Gönderen kişiden yenisini isteyin.",
-    "siteCantEmbed": "Bu video burada oynatılamıyor."
+    "siteCantEmbed": "Bu video burada oynatılamıyor.",
+    "siteGetExtension": "YouClip uzantısıyla kendi kliplerinizi paylaşın"
   },
   "uk": {
     "lang": "uk",
@@ -185,7 +201,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "Дивитися далі",
     "watchOnYouTube": "Дивитися на YouTube",
     "siteInvalidLink": "Це посилання на фрагмент неповне або пошкоджене. Попросіть відправника надіслати нове.",
-    "siteCantEmbed": "Це відео не можна відтворити тут."
+    "siteCantEmbed": "Це відео не можна відтворити тут.",
+    "siteGetExtension": "Діліться власними фрагментами за допомогою розширення YouClip"
   },
   "zh_CN": {
     "lang": "zh-CN",
@@ -196,7 +213,8 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "继续观看",
     "watchOnYouTube": "在 YouTube 上观看",
     "siteInvalidLink": "此片段链接不完整或已损坏。请向发送者索取新链接。",
-    "siteCantEmbed": "此视频无法在这里播放。"
+    "siteCantEmbed": "此视频无法在这里播放。",
+    "siteGetExtension": "使用 YouClip 扩展程序分享你自己的片段"
   },
   "zh_TW": {
     "lang": "zh-TW",
@@ -207,6 +225,7 @@ window.YOUCLIP_STRINGS = {
     "keepWatching": "繼續觀看",
     "watchOnYouTube": "在 YouTube 上觀看",
     "siteInvalidLink": "這個片段連結不完整或已損壞。請向傳送者索取新的連結。",
-    "siteCantEmbed": "這部影片無法在這裡播放。"
+    "siteCantEmbed": "這部影片無法在這裡播放。",
+    "siteGetExtension": "使用 YouClip 擴充功能分享你自己的片段"
   }
 };

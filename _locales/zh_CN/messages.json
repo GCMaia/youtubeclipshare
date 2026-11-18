@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "此视频无法在这里播放。"
   },
+  "siteGetExtension": {
+    "message": "使用 YouClip 扩展程序分享你自己的片段"
+  },
   "clipButton": {
     "message": "片段"
   },

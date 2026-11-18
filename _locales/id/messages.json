@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Video ini tidak dapat diputar di sini."
   },
+  "siteGetExtension": {
+    "message": "Bagikan klip Anda sendiri dengan ekstensi YouClip"
+  },
   "clipButton": {
     "message": "Klip"
   },

@@ -209,6 +209,10 @@
     "message": "This video can’t be played here.",
     "description": "Web player message when YouTube does not allow the video to play outside youtube.com."
   },
+  "siteGetExtension": {
+    "message": "Share your own clips with the YouClip extension",
+    "description": "Link in the web player's footer to the extension's Chrome Web Store page."
+  },
   "clipButton": {
     "message": "Clip",
     "description": "Label of the Clip button added next to Like/Share under the video. Keep it short (one word if possible)."

@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Questo video non può essere riprodotto qui."
   },
+  "siteGetExtension": {
+    "message": "Condividi le tue clip con l’estensione YouClip"
+  },
   "clipButton": {
     "message": "Clip"
   },

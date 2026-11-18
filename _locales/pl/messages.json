@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Tego filmu nie można tu odtworzyć."
   },
+  "siteGetExtension": {
+    "message": "Udostępniaj własne klipy dzięki rozszerzeniu YouClip"
+  },
   "clipButton": {
     "message": "Klip"
   },

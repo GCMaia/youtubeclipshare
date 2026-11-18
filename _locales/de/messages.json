@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Dieses Video kann hier nicht abgespielt werden."
   },
+  "siteGetExtension": {
+    "message": "Teile eigene Clips mit der YouClip-Erweiterung"
+  },
   "clipButton": {
     "message": "Clip"
   },

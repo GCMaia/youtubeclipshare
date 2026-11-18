@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "이 동영상은 여기에서 재생할 수 없습니다."
   },
+  "siteGetExtension": {
+    "message": "YouClip 확장 프로그램으로 나만의 클립을 공유하세요"
+  },
   "clipButton": {
     "message": "클립"
   },

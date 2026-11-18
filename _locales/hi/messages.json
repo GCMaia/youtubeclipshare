@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "यह वीडियो यहां नहीं चलाया जा सकता।"
   },
+  "siteGetExtension": {
+    "message": "YouClip एक्सटेंशन से अपनी क्लिप शेयर करें"
+  },
   "clipButton": {
     "message": "क्लिप"
   },

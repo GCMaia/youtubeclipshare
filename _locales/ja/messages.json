@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "この動画はここでは再生できません。"
   },
+  "siteGetExtension": {
+    "message": "YouClip 拡張機能で、自分のクリップを共有できます"
+  },
   "clipButton": {
     "message": "クリップ"
   },

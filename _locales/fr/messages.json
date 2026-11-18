@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Cette vidéo ne peut pas être lue ici."
   },
+  "siteGetExtension": {
+    "message": "Partagez vos propres extraits avec l’extension YouClip"
+  },
   "clipButton": {
     "message": "Extrait"
   },

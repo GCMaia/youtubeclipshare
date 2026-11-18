@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Deze video kan hier niet worden afgespeeld."
   },
+  "siteGetExtension": {
+    "message": "Deel je eigen clips met de YouClip-extensie"
+  },
   "clipButton": {
     "message": "Clip"
   },

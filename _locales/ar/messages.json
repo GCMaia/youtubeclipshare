@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "لا يمكن تشغيل هذا الفيديو هنا."
   },
+  "siteGetExtension": {
+    "message": "شارك مقاطعك الخاصة باستخدام إضافة YouClip"
+  },
   "clipButton": {
     "message": "مقطع"
   },

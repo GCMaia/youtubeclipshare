@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "Bu video burada oynatılamıyor."
   },
+  "siteGetExtension": {
+    "message": "YouClip uzantısıyla kendi kliplerinizi paylaşın"
+  },
   "clipButton": {
     "message": "Klip"
   },

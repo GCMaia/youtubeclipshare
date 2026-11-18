@@ -389,12 +389,40 @@ body {
 
 .footer {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px 8px;
   padding: 20px 16px;
   color: var(--text-muted);
-  font-size: 12px;
+  font-size: 13px;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer a:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.footer-home {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: inherit;
+}
+
+/* The link to the extension in the Chrome Web Store, on clip pages. */
+.footer-get {
+  color: var(--accent);
+  font-weight: 500;
 }
 
 @media (max-width: 640px) {
@@ -413,5 +441,14 @@ body {
   /* The video goes edge to edge on phones; keep the bar's dots off the screen edge. */
   .timeline {
     margin: 6px 9px 0;
+  }
+
+  /* On phones the store link gets its own line, under "YouClip". */
+  .footer {
+    flex-direction: column;
+  }
+
+  .footer-sep {
+    display: none;
   }
 }

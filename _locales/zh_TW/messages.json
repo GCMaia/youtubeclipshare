@@ -164,6 +164,9 @@
   "siteCantEmbed": {
     "message": "這部影片無法在這裡播放。"
   },
+  "siteGetExtension": {
+    "message": "使用 YouClip 擴充功能分享你自己的片段"
+  },
   "clipButton": {
     "message": "片段"
   },
