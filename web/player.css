@@ -322,8 +322,9 @@ body {
   height: 42px;
   padding: 0 20px;
   border-radius: 21px;
-  background: #ffdd00;
-  color: #0f0f0f;
+  /* The app icon's gradient (TOP and BOTTOM in tools/make-icons.mjs). */
+  background: linear-gradient(#6366f1, #4338ca);
+  color: #fff;
   font-weight: 600;
   text-decoration: none;
 }
