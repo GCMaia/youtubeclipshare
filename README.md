@@ -6,6 +6,12 @@ the start time and pause at the end time.
 
 ## Install
 
+Install YouClip from the
+[Chrome Web Store](https://chromewebstore.google.com/detail/youclip-for-youtube/kgcjbafmhoocoejhfckcigcaaanfmkeb).
+It works in Chrome, Brave and Edge.
+
+To run the code in this folder instead, for example while changing it:
+
 1. Open `chrome://extensions` (Edge: `edge://extensions`, Brave: `brave://extensions`).
 2. Turn on **Developer mode**.
 3. Click **Load unpacked** and select this folder.
@@ -89,13 +95,11 @@ updates the site** within a minute or two. `wrangler.jsonc` tells Cloudflare to 
 plan allows 100,000 clip page views a day; files like the player script and icons don't count.
 
 The site's pages:
-- `/`: the home page (`web/index.html`), with links to the extension, the privacy policy, this
-  repository and the "Buy me a pizza" page. Old-style clip links (`/?v=…&t=…&end=…`) are sent on
-  to the player.
+- `/`: the home page (`web/index.html`), with links to the extension in the Chrome Web Store, the
+  privacy policy, this repository and the "Buy me a pizza" page. Old-style clip links
+  (`/?v=…&t=…&end=…`) are sent on to the player.
 - `/watch/…`: the clip player (`web/watch.html`, `player.js`, `player.css`).
 - `/privacy`: the privacy policy, generated from `store/privacy-policy.md`.
-
-When the extension is approved, replace "Coming soon" on the home page with its Chrome Web Store link.
 
 To try the Worker on your computer: `npx wrangler dev`, then open
 http://127.0.0.1:8787/watch/dQw4w9WgXcQ?start=43&end=50.
