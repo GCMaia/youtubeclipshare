@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "使用 YouClip 扩展程序分享你自己的片段"
   },
+  "siteBuyPizza": {
+    "message": "请我吃披萨"
+  },
   "clipButton": {
     "message": "片段"
   },

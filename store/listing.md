@@ -29,61 +29,47 @@ Upload `dist/youclip-<version>.zip` (build it with `node tools/package.mjs`).
 
 **Category:** Lifestyle → Entertainment (or Social Networking)
 
-**Language:** English (add Portuguese (Brazil) as a second listing language and use the text below)
+**Language:** English is the default language.
+
+**Homepage URL:** https://youclip.ca (the home page has the "Buy me a pizza" button)
 
 **Support URL** (if the form asks): https://github.com/GCMaia/youtubeclipshare/issues
 
-### Description — English
+### Description, in every language
 
-```
-Share the exact part of a YouTube video you mean, not the whole thing.
+The store shows each visitor the extension's name and summary in their own language (they come from
+`_locales/`), but the description only in the languages it was entered in, and English everywhere
+else. So enter a description for every language, or visitors get a translated name and summary above
+an English description.
 
-Click the new Clip button under any video. A panel opens beside the video where you set the start and the end: type the times, or press "Now" at the right moment while the video plays. Give the clip a title if you like, preview it, and copy the link.
+There's one file per language in `store/descriptions/`, named like the `_locales/` folders. In the
+**Store listing** tab, pick each language in the language menu at the top, paste its file into
+**Description**, and save. When all of them are in, click **Submit for review**. Screenshots and the
+promo tile don't need translating: the ones in the default language are shown for every language.
 
-ANYONE CAN WATCH, NOTHING TO INSTALL
-The link opens a page that plays just that part of the video, on a computer or a phone. When the clip ends, viewers can replay it or keep watching. Pasted into most chat apps, the link shows your clip's title and the video's thumbnail.
+| File | Language |
+| --- | --- |
+| `en.txt` | English |
+| `ar.txt` | Arabic |
+| `de.txt` | German |
+| `es.txt` | Spanish |
+| `fr.txt` | French |
+| `hi.txt` | Hindi |
+| `id.txt` | Indonesian |
+| `it.txt` | Italian |
+| `ja.txt` | Japanese |
+| `ko.txt` | Korean |
+| `nl.txt` | Dutch |
+| `pl.txt` | Polish |
+| `pt_BR.txt` | Portuguese (Brazil) |
+| `pt_PT.txt` | Portuguese (Portugal) |
+| `ru.txt` | Russian |
+| `tr.txt` | Turkish |
+| `uk.txt` | Ukrainian |
+| `zh_CN.txt` | Chinese (Simplified) |
+| `zh_TW.txt` | Chinese (Traditional) |
 
-EVEN BETTER WITH YOUCLIP INSTALLED
-Prefer a regular YouTube link? Switch to "YouTube link". For people who have YouClip, it starts at your start time, marks the clip with grey dots on the progress bar, dims the rest of the page and pauses at your end time. Without YouClip, it still starts at the right moment.
-
-ALSO
-• Optional clip title, shown above the video
-• Preview the clip before you share it
-• The toolbar button opens the same picker
-• Works with YouTube's light and dark themes
-• Available in 19 languages
-
-PRIVATE BY DESIGN
-The extension collects no data and only runs on youtube.com. A clip link contains only the video, the times and your title. No accounts, no ads, no tracking.
-
-YouClip is not affiliated with or endorsed by YouTube or Google.
-```
-
-### Description — Português (Brasil)
-
-```
-Compartilhe exatamente o trecho de um vídeo do YouTube que você quer mostrar, não o vídeo inteiro.
-
-Clique no novo botão Clipe embaixo de qualquer vídeo. Um painel abre ao lado do vídeo, onde você define o início e o fim: digite os tempos ou clique em "Agora" no momento certo enquanto o vídeo toca. Se quiser, dê um título ao clipe, veja uma prévia e copie o link.
-
-QUALQUER PESSOA ASSISTE, SEM INSTALAR NADA
-O link abre uma página que reproduz só aquele trecho do vídeo, no computador ou no celular. Quando o clipe termina, dá para repetir ou continuar assistindo. Colado na maioria dos apps de conversa, o link mostra o título do clipe e a miniatura do vídeo.
-
-AINDA MELHOR COM O YOUCLIP INSTALADO
-Prefere um link normal do YouTube? Escolha "Link do YouTube". Para quem tem o YouClip, ele começa no seu tempo de início, marca o clipe com pontos cinza na barra de progresso, escurece o resto da página e pausa no tempo final. Sem o YouClip, ele ainda começa no momento certo.
-
-TAMBÉM
-• Título do clipe opcional, mostrado acima do vídeo
-• Prévia do clipe antes de compartilhar
-• O botão na barra de ferramentas abre o mesmo seletor
-• Funciona nos temas claro e escuro do YouTube
-• Disponível em 19 idiomas
-
-PRIVACIDADE EM PRIMEIRO LUGAR
-A extensão não coleta nenhum dado e só funciona no youtube.com. Um link de clipe contém apenas o vídeo, os tempos e o seu título. Sem contas, sem anúncios, sem rastreamento.
-
-O YouClip não é afiliado nem endossado pelo YouTube ou pelo Google.
-```
+When you add a language to `_locales/`, add its description here too, and paste it in the dashboard.
 
 ### Graphics
 

@@ -333,6 +333,20 @@ body {
   filter: brightness(1.06);
 }
 
+/* The smaller one at the bottom of clip pages. */
+.pizza-small {
+  gap: 6px;
+  height: 28px;
+  margin-inline-start: 8px;
+  padding: 0 12px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.footer .pizza-small:hover {
+  text-decoration: none;
+}
+
 .home-links a:focus-visible,
 .pizza:focus-visible {
   outline: 2px solid var(--accent);
@@ -451,5 +465,9 @@ body {
 
   .footer-sep {
     display: none;
+  }
+
+  .footer .pizza-small {
+    margin: 6px 0 0;
   }
 }

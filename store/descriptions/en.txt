@@ -1,0 +1,25 @@
+Share the exact part of a YouTube video you mean, not the whole thing.
+
+Click the new Clip button under any video. A panel opens beside the video where you set the start and the end: type the times, or press "Now" at the right moment while the video plays. Give the clip a title if you like, preview it, and copy the link.
+
+ANYONE CAN WATCH, NOTHING TO INSTALL
+The link opens a page that plays just that part of the video, on a computer or a phone. When the clip ends, viewers can replay it or keep watching. Pasted into most chat apps, the link shows your clip's title and the video's thumbnail.
+
+EVEN BETTER WITH YOUCLIP INSTALLED
+Prefer a regular YouTube link? Switch to "YouTube link". For people who have YouClip, it starts at your start time, marks the clip with grey dots on the progress bar, dims the rest of the page and pauses at your end time. Without YouClip, it still starts at the right moment.
+
+ALSO
+• Optional clip title, shown on the clip's page and in chat link previews
+• Preview the clip before you share it
+• The toolbar button opens the same picker
+• Works with YouTube's light and dark themes
+• Available in 19 languages
+
+PRIVATE BY DESIGN
+The extension collects no data and only runs on youtube.com. A clip link contains only the video, the times and your title. No accounts, no ads, no tracking.
+
+FREE AND OPEN SOURCE
+YouClip is a personal project, with no ads and no paid features. The code is on GitHub: https://github.com/GCMaia/youtubeclipshare
+If YouClip is useful to you, you can buy me a pizza: https://buymeacoffee.com/gcmaia
+
+YouClip is not affiliated with or endorsed by YouTube or Google.

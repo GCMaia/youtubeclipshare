@@ -1,0 +1,25 @@
+Bir YouTube videosunun tamamını değil, tam olarak göstermek istediğiniz kısmını paylaşın.
+
+Herhangi bir videonun altındaki yeni Klip düğmesine tıklayın. Videonun yanında bir panel açılır; burada başlangıcı ve bitişi belirlersiniz: zamanları yazın ya da video oynarken doğru anda "Şimdi" düğmesine basın. İsterseniz klibe bir başlık verin, önizleyin ve bağlantıyı kopyalayın.
+
+HERKES İZLEYEBİLİR, HİÇBİR ŞEY YÜKLEMEYE GEREK YOK
+Bağlantı, videonun yalnızca o kısmını oynatan bir sayfa açar; bilgisayarda da telefonda da. Klip bittiğinde tekrar oynatılabilir ya da izlemeye devam edilebilir. Çoğu mesajlaşma uygulamasına yapıştırıldığında bağlantı, klibin başlığını ve videonun küçük resmini gösterir.
+
+YOUCLIP YÜKLÜYSE DAHA DA İYİ
+Normal bir YouTube bağlantısı mı tercih edersiniz? "YouTube bağlantısı" seçeneğini seçin. YouClip yüklü olanlarda video sizin başlangıç zamanınızda başlar, klip ilerleme çubuğunda gri noktalarla işaretlenir, sayfanın geri kalanı karartılır ve video bitiş zamanınızda durur. YouClip olmadan da video doğru anda başlar.
+
+AYRICA
+• İsteğe bağlı klip başlığı; klibin sayfasında ve sohbet uygulamalarındaki bağlantı önizlemelerinde gösterilir
+• Paylaşmadan önce klibi önizleme
+• Araç çubuğundaki düğme aynı seçiciyi açar
+• YouTube’un açık ve koyu temalarıyla çalışır
+• 19 dilde kullanılabilir
+
+GİZLİLİK ÖNCELİKLİ
+Uzantı hiçbir veri toplamaz ve yalnızca youtube.com’da çalışır. Bir klip bağlantısı yalnızca videoyu, zamanları ve başlığınızı içerir. Hesap yok, reklam yok, izleme yok.
+
+ÜCRETSİZ VE AÇIK KAYNAK
+YouClip, reklamsız ve ücretli özelliği olmayan kişisel bir projedir. Kodu GitHub’da: https://github.com/GCMaia/youtubeclipshare
+YouClip işinize yaradıysa bana bir pizza ısmarlayabilirsiniz: https://buymeacoffee.com/gcmaia
+
+YouClip, YouTube veya Google ile bağlantılı değildir ve onlar tarafından onaylanmamıştır.

@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "YouClip एक्सटेंशन से अपनी क्लिप शेयर करें"
   },
+  "siteBuyPizza": {
+    "message": "मुझे एक पिज़्ज़ा खिलाएँ"
+  },
   "clipButton": {
     "message": "क्लिप"
   },

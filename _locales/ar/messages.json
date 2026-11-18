@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "شارك مقاطعك الخاصة باستخدام إضافة YouClip"
   },
+  "siteBuyPizza": {
+    "message": "اشترِ لي بيتزا"
+  },
   "clipButton": {
     "message": "مقطع"
   },

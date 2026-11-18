@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "YouClip uzantısıyla kendi kliplerinizi paylaşın"
   },
+  "siteBuyPizza": {
+    "message": "Bana bir pizza ısmarlayın"
+  },
   "clipButton": {
     "message": "Klip"
   },

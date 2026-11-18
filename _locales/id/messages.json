@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "Bagikan klip Anda sendiri dengan ekstensi YouClip"
   },
+  "siteBuyPizza": {
+    "message": "Traktir saya pizza"
+  },
   "clipButton": {
     "message": "Klip"
   },

@@ -1,0 +1,25 @@
+Bagikan bagian video YouTube yang Anda maksud dengan tepat, bukan seluruh videonya.
+
+Klik tombol Klip baru di bawah video mana pun. Sebuah panel terbuka di samping video, tempat Anda menentukan awal dan akhir: ketik waktunya, atau tekan "Sekarang" di momen yang tepat saat video diputar. Jika mau, beri judul pada klip, lihat pratinjaunya, lalu salin link-nya.
+
+SIAPA PUN BISA MENONTON, TANPA MENGINSTAL APA PUN
+Link membuka halaman yang hanya memutar bagian video tersebut, di komputer atau ponsel. Saat klip selesai, penonton bisa memutarnya ulang atau lanjut menonton. Saat ditempel di sebagian besar aplikasi chat, link menampilkan judul klip dan thumbnail video.
+
+LEBIH BAIK LAGI DENGAN YOUCLIP TERPASANG
+Lebih suka link YouTube biasa? Pilih "Link YouTube". Bagi yang memasang YouClip, video dimulai dari waktu mulai Anda, klip ditandai dengan titik abu-abu di bilah progres, bagian lain halaman diredupkan, dan video berhenti di waktu akhir Anda. Tanpa YouClip, video tetap dimulai di momen yang tepat.
+
+SELAIN ITU
+• Judul klip opsional, ditampilkan di halaman klip dan di pratinjau link pada aplikasi chat
+• Pratinjau klip sebelum dibagikan
+• Tombol di toolbar membuka pemilih yang sama
+• Berfungsi dengan tema terang dan gelap YouTube
+• Tersedia dalam 19 bahasa
+
+PRIVASI SEJAK AWAL
+Ekstensi ini tidak mengumpulkan data apa pun dan hanya berjalan di youtube.com. Link klip hanya berisi video, waktu, dan judul Anda. Tanpa akun, tanpa iklan, tanpa pelacakan.
+
+GRATIS DAN OPEN SOURCE
+YouClip adalah proyek pribadi, tanpa iklan dan tanpa fitur berbayar. Kodenya ada di GitHub: https://github.com/GCMaia/youtubeclipshare
+Jika YouClip bermanfaat bagi Anda, Anda bisa mentraktir saya pizza: https://buymeacoffee.com/gcmaia
+
+YouClip tidak berafiliasi dengan atau didukung oleh YouTube maupun Google.

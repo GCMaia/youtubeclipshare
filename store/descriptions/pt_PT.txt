@@ -1,0 +1,25 @@
+Partilhe exatamente a parte de um vídeo do YouTube que quer mostrar, e não o vídeo inteiro.
+
+Clique no novo botão Clip por baixo de qualquer vídeo. Abre-se um painel ao lado do vídeo, onde define o início e o fim: escreva os tempos ou carregue em "Agora" no momento certo enquanto o vídeo é reproduzido. Se quiser, dê um título ao clip, pré-visualize-o e copie o link.
+
+QUALQUER PESSOA PODE VER, SEM INSTALAR NADA
+O link abre uma página que reproduz apenas essa parte do vídeo, no computador ou no telemóvel. Quando o clip termina, é possível repeti-lo ou continuar a ver. Colado na maioria das aplicações de conversação, o link mostra o título do clip e a miniatura do vídeo.
+
+AINDA MELHOR COM O YOUCLIP INSTALADO
+Prefere um link normal do YouTube? Escolha "Link do YouTube". Para quem tem o YouClip, o vídeo começa no seu tempo de início, o clip fica marcado com pontos cinzentos na barra de progresso, o resto da página escurece e o vídeo faz pausa no tempo final. Sem o YouClip, começa na mesma no momento certo.
+
+E AINDA
+• Título do clip opcional, mostrado na página do clip e nas pré-visualizações de links das aplicações de conversação
+• Pré-visualize o clip antes de o partilhar
+• O botão na barra de ferramentas abre o mesmo seletor
+• Funciona com os temas claro e escuro do YouTube
+• Disponível em 19 idiomas
+
+PRIVACIDADE EM PRIMEIRO LUGAR
+A extensão não recolhe quaisquer dados e só funciona em youtube.com. Um link de clip contém apenas o vídeo, os tempos e o seu título. Sem contas, sem anúncios, sem rastreio.
+
+GRATUITO E DE CÓDIGO ABERTO
+O YouClip é um projeto pessoal, sem anúncios nem funcionalidades pagas. O código está no GitHub: https://github.com/GCMaia/youtubeclipshare
+Se o YouClip lhe for útil, pode oferecer-me uma pizza: https://buymeacoffee.com/gcmaia
+
+O YouClip não está associado ao YouTube nem à Google, nem é aprovado por eles.

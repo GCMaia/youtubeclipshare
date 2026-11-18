@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "YouClip 확장 프로그램으로 나만의 클립을 공유하세요"
   },
+  "siteBuyPizza": {
+    "message": "피자 사 주기"
+  },
   "clipButton": {
     "message": "클립"
   },

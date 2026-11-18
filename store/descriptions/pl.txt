@@ -1,0 +1,25 @@
+Udostępniaj dokładnie ten fragment filmu z YouTube, o który ci chodzi, a nie cały film.
+
+Kliknij nowy przycisk Klip pod dowolnym filmem. Obok filmu otworzy się panel, w którym ustawisz początek i koniec: wpisz czasy albo kliknij „Teraz” we właściwym momencie podczas odtwarzania. Jeśli chcesz, nadaj klipowi tytuł, obejrzyj podgląd i skopiuj link.
+
+KAŻDY MOŻE OBEJRZEĆ, BEZ INSTALOWANIA
+Link otwiera stronę, która odtwarza tylko ten fragment filmu, na komputerze lub telefonie. Gdy klip się skończy, można go powtórzyć albo oglądać dalej. Wklejony do większości komunikatorów link pokazuje tytuł klipu i miniaturę filmu.
+
+JESZCZE LEPIEJ Z ZAINSTALOWANYM YOUCLIP
+Wolisz zwykły link do YouTube? Wybierz „Link do YouTube”. U osób, które mają YouClip, film zaczyna się w twoim czasie początkowym, klip jest oznaczony szarymi kropkami na pasku postępu, reszta strony jest przyciemniona, a film zatrzymuje się w twoim czasie końcowym. Bez YouClip film i tak zaczyna się we właściwym momencie.
+
+PONADTO
+• Opcjonalny tytuł klipu, widoczny na stronie klipu i w podglądach linków w komunikatorach
+• Podgląd klipu przed udostępnieniem
+• Przycisk na pasku narzędzi otwiera ten sam panel wyboru
+• Działa z jasnym i ciemnym motywem YouTube
+• Dostępne w 19 językach
+
+PRYWATNOŚĆ PRZEDE WSZYSTKIM
+Rozszerzenie nie zbiera żadnych danych i działa tylko na youtube.com. Link do klipu zawiera tylko film, czasy i twój tytuł. Bez kont, bez reklam, bez śledzenia.
+
+ZA DARMO I OPEN SOURCE
+YouClip to osobisty projekt, bez reklam i bez płatnych funkcji. Kod jest na GitHubie: https://github.com/GCMaia/youtubeclipshare
+Jeśli YouClip ci się przydaje, możesz postawić mi pizzę: https://buymeacoffee.com/gcmaia
+
+YouClip nie jest powiązany z YouTube ani z Google i nie jest przez nie wspierany.

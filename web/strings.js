@@ -10,7 +10,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "المشاهدة على YouTube",
     "siteInvalidLink": "رابط المقطع هذا غير مكتمل أو تالف. اطلب رابطًا جديدًا من الشخص الذي أرسله.",
     "siteCantEmbed": "لا يمكن تشغيل هذا الفيديو هنا.",
-    "siteGetExtension": "شارك مقاطعك الخاصة باستخدام إضافة YouClip"
+    "siteGetExtension": "شارك مقاطعك الخاصة باستخدام إضافة YouClip",
+    "siteBuyPizza": "اشترِ لي بيتزا"
   },
   "de": {
     "lang": "de",
@@ -22,7 +23,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Auf YouTube ansehen",
     "siteInvalidLink": "Dieser Clip-Link ist unvollständig oder fehlerhaft. Bitte die Person, die ihn geschickt hat, um einen neuen.",
     "siteCantEmbed": "Dieses Video kann hier nicht abgespielt werden.",
-    "siteGetExtension": "Teile eigene Clips mit der YouClip-Erweiterung"
+    "siteGetExtension": "Teile eigene Clips mit der YouClip-Erweiterung",
+    "siteBuyPizza": "Spendier mir eine Pizza"
   },
   "en": {
     "lang": "en",
@@ -34,7 +36,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Watch on YouTube",
     "siteInvalidLink": "This clip link is incomplete or broken. Ask the person who sent it for a new one.",
     "siteCantEmbed": "This video can’t be played here.",
-    "siteGetExtension": "Share your own clips with the YouClip extension"
+    "siteGetExtension": "Share your own clips with the YouClip extension",
+    "siteBuyPizza": "Buy me a pizza"
   },
   "es": {
     "lang": "es",
@@ -46,7 +49,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Ver en YouTube",
     "siteInvalidLink": "Este enlace de clip está incompleto o dañado. Pide uno nuevo a quien te lo envió.",
     "siteCantEmbed": "Este video no se puede reproducir aquí.",
-    "siteGetExtension": "Comparte tus propios clips con la extensión YouClip"
+    "siteGetExtension": "Comparte tus propios clips con la extensión YouClip",
+    "siteBuyPizza": "Invítame a una pizza"
   },
   "fr": {
     "lang": "fr",
@@ -58,7 +62,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Regarder sur YouTube",
     "siteInvalidLink": "Ce lien d’extrait est incomplet ou endommagé. Demandez-en un nouveau à la personne qui vous l’a envoyé.",
     "siteCantEmbed": "Cette vidéo ne peut pas être lue ici.",
-    "siteGetExtension": "Partagez vos propres extraits avec l’extension YouClip"
+    "siteGetExtension": "Partagez vos propres extraits avec l’extension YouClip",
+    "siteBuyPizza": "Offrez-moi une pizza"
   },
   "hi": {
     "lang": "hi",
@@ -70,7 +75,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "YouTube पर देखें",
     "siteInvalidLink": "यह क्लिप लिंक अधूरा या खराब है। भेजने वाले से नया लिंक मांगें।",
     "siteCantEmbed": "यह वीडियो यहां नहीं चलाया जा सकता।",
-    "siteGetExtension": "YouClip एक्सटेंशन से अपनी क्लिप शेयर करें"
+    "siteGetExtension": "YouClip एक्सटेंशन से अपनी क्लिप शेयर करें",
+    "siteBuyPizza": "मुझे एक पिज़्ज़ा खिलाएँ"
   },
   "id": {
     "lang": "id",
@@ -82,7 +88,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Tonton di YouTube",
     "siteInvalidLink": "Link klip ini tidak lengkap atau rusak. Minta link baru kepada pengirimnya.",
     "siteCantEmbed": "Video ini tidak dapat diputar di sini.",
-    "siteGetExtension": "Bagikan klip Anda sendiri dengan ekstensi YouClip"
+    "siteGetExtension": "Bagikan klip Anda sendiri dengan ekstensi YouClip",
+    "siteBuyPizza": "Traktir saya pizza"
   },
   "it": {
     "lang": "it",
@@ -94,7 +101,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Guarda su YouTube",
     "siteInvalidLink": "Questo link della clip è incompleto o danneggiato. Chiedine uno nuovo a chi te l’ha inviato.",
     "siteCantEmbed": "Questo video non può essere riprodotto qui.",
-    "siteGetExtension": "Condividi le tue clip con l’estensione YouClip"
+    "siteGetExtension": "Condividi le tue clip con l’estensione YouClip",
+    "siteBuyPizza": "Offrimi una pizza"
   },
   "ja": {
     "lang": "ja",
@@ -106,7 +114,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "YouTube で見る",
     "siteInvalidLink": "このクリップのリンクは不完全か壊れています。送信者に新しいリンクを依頼してください。",
     "siteCantEmbed": "この動画はここでは再生できません。",
-    "siteGetExtension": "YouClip 拡張機能で、自分のクリップを共有できます"
+    "siteGetExtension": "YouClip 拡張機能で、自分のクリップを共有できます",
+    "siteBuyPizza": "ピザをおごる"
   },
   "ko": {
     "lang": "ko",
@@ -118,7 +127,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "YouTube에서 보기",
     "siteInvalidLink": "이 클립 링크가 불완전하거나 손상되었습니다. 보낸 사람에게 새 링크를 요청하세요.",
     "siteCantEmbed": "이 동영상은 여기에서 재생할 수 없습니다.",
-    "siteGetExtension": "YouClip 확장 프로그램으로 나만의 클립을 공유하세요"
+    "siteGetExtension": "YouClip 확장 프로그램으로 나만의 클립을 공유하세요",
+    "siteBuyPizza": "피자 사 주기"
   },
   "nl": {
     "lang": "nl",
@@ -130,7 +140,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Bekijken op YouTube",
     "siteInvalidLink": "Deze cliplink is onvolledig of beschadigd. Vraag de afzender om een nieuwe.",
     "siteCantEmbed": "Deze video kan hier niet worden afgespeeld.",
-    "siteGetExtension": "Deel je eigen clips met de YouClip-extensie"
+    "siteGetExtension": "Deel je eigen clips met de YouClip-extensie",
+    "siteBuyPizza": "Trakteer me op een pizza"
   },
   "pl": {
     "lang": "pl",
@@ -142,7 +153,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Obejrzyj na YouTube",
     "siteInvalidLink": "Ten link do klipu jest niekompletny lub uszkodzony. Poproś nadawcę o nowy.",
     "siteCantEmbed": "Tego filmu nie można tu odtworzyć.",
-    "siteGetExtension": "Udostępniaj własne klipy dzięki rozszerzeniu YouClip"
+    "siteGetExtension": "Udostępniaj własne klipy dzięki rozszerzeniu YouClip",
+    "siteBuyPizza": "Postaw mi pizzę"
   },
   "pt_BR": {
     "lang": "pt-BR",
@@ -154,7 +166,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Assistir no YouTube",
     "siteInvalidLink": "Este link de clipe está incompleto ou quebrado. Peça um novo para quem enviou.",
     "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui.",
-    "siteGetExtension": "Compartilhe seus próprios clipes com a extensão YouClip"
+    "siteGetExtension": "Compartilhe seus próprios clipes com a extensão YouClip",
+    "siteBuyPizza": "Me pague uma pizza"
   },
   "pt_PT": {
     "lang": "pt-PT",
@@ -166,7 +179,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Ver no YouTube",
     "siteInvalidLink": "Este link de clip está incompleto ou danificado. Peça um novo a quem o enviou.",
     "siteCantEmbed": "Este vídeo não pode ser reproduzido aqui.",
-    "siteGetExtension": "Partilhe os seus próprios clips com a extensão YouClip"
+    "siteGetExtension": "Partilhe os seus próprios clips com a extensão YouClip",
+    "siteBuyPizza": "Ofereça-me uma pizza"
   },
   "ru": {
     "lang": "ru",
@@ -178,7 +192,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Смотреть на YouTube",
     "siteInvalidLink": "Эта ссылка на фрагмент неполная или повреждена. Попросите отправителя прислать новую.",
     "siteCantEmbed": "Это видео нельзя воспроизвести здесь.",
-    "siteGetExtension": "Делитесь своими фрагментами с помощью расширения YouClip"
+    "siteGetExtension": "Делитесь своими фрагментами с помощью расширения YouClip",
+    "siteBuyPizza": "Угостите меня пиццей"
   },
   "tr": {
     "lang": "tr",
@@ -190,7 +205,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "YouTube’da izle",
     "siteInvalidLink": "Bu klip bağlantısı eksik veya bozuk. Gönderen kişiden yenisini isteyin.",
     "siteCantEmbed": "Bu video burada oynatılamıyor.",
-    "siteGetExtension": "YouClip uzantısıyla kendi kliplerinizi paylaşın"
+    "siteGetExtension": "YouClip uzantısıyla kendi kliplerinizi paylaşın",
+    "siteBuyPizza": "Bana bir pizza ısmarlayın"
   },
   "uk": {
     "lang": "uk",
@@ -202,7 +218,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "Дивитися на YouTube",
     "siteInvalidLink": "Це посилання на фрагмент неповне або пошкоджене. Попросіть відправника надіслати нове.",
     "siteCantEmbed": "Це відео не можна відтворити тут.",
-    "siteGetExtension": "Діліться власними фрагментами за допомогою розширення YouClip"
+    "siteGetExtension": "Діліться власними фрагментами за допомогою розширення YouClip",
+    "siteBuyPizza": "Пригостіть мене піцою"
   },
   "zh_CN": {
     "lang": "zh-CN",
@@ -214,7 +231,8 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "在 YouTube 上观看",
     "siteInvalidLink": "此片段链接不完整或已损坏。请向发送者索取新链接。",
     "siteCantEmbed": "此视频无法在这里播放。",
-    "siteGetExtension": "使用 YouClip 扩展程序分享你自己的片段"
+    "siteGetExtension": "使用 YouClip 扩展程序分享你自己的片段",
+    "siteBuyPizza": "请我吃披萨"
   },
   "zh_TW": {
     "lang": "zh-TW",
@@ -226,6 +244,7 @@ window.YOUCLIP_STRINGS = {
     "watchOnYouTube": "在 YouTube 上觀看",
     "siteInvalidLink": "這個片段連結不完整或已損壞。請向傳送者索取新的連結。",
     "siteCantEmbed": "這部影片無法在這裡播放。",
-    "siteGetExtension": "使用 YouClip 擴充功能分享你自己的片段"
+    "siteGetExtension": "使用 YouClip 擴充功能分享你自己的片段",
+    "siteBuyPizza": "請我吃披薩"
   }
 };

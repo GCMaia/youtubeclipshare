@@ -1,0 +1,25 @@
+Partagez exactement le passage d’une vidéo YouTube que vous voulez montrer, pas la vidéo entière.
+
+Cliquez sur le nouveau bouton Extrait sous n’importe quelle vidéo. Un panneau s’ouvre à côté de la vidéo pour choisir le début et la fin : saisissez les temps, ou appuyez sur « Maintenant » au bon moment pendant la lecture. Donnez un titre à l’extrait si vous le souhaitez, vérifiez-le avec l’aperçu et copiez le lien.
+
+TOUT LE MONDE PEUT LE REGARDER, SANS RIEN INSTALLER
+Le lien ouvre une page qui lit uniquement ce passage de la vidéo, sur ordinateur comme sur téléphone. À la fin de l’extrait, on peut le revoir ou continuer la vidéo. Collé dans la plupart des messageries, le lien affiche le titre de l’extrait et la miniature de la vidéo.
+
+ENCORE MIEUX AVEC YOUCLIP INSTALLÉ
+Vous préférez un lien YouTube classique ? Choisissez « Lien YouTube ». Pour ceux qui ont YouClip, la vidéo démarre à votre temps de début, l’extrait est marqué par des points gris sur la barre de progression, le reste de la page s’assombrit et la vidéo se met en pause à votre temps de fin. Sans YouClip, elle démarre quand même au bon moment.
+
+ET AUSSI
+• Titre d’extrait facultatif, affiché sur la page de l’extrait et dans les aperçus de lien des messageries
+• Aperçu de l’extrait avant de le partager
+• Le bouton de la barre d’outils ouvre le même sélecteur
+• Compatible avec les thèmes clair et sombre de YouTube
+• Disponible en 19 langues
+
+RESPECT DE LA VIE PRIVÉE
+L’extension ne collecte aucune donnée et ne fonctionne que sur youtube.com. Un lien d’extrait contient uniquement la vidéo, les temps et votre titre. Pas de compte, pas de publicité, pas de suivi.
+
+GRATUIT ET OPEN SOURCE
+YouClip est un projet personnel, sans publicité ni fonctionnalité payante. Le code est sur GitHub : https://github.com/GCMaia/youtubeclipshare
+Si YouClip vous est utile, vous pouvez m’offrir une pizza : https://buymeacoffee.com/gcmaia
+
+YouClip n’est ni affilié à YouTube ou à Google, ni approuvé par eux.

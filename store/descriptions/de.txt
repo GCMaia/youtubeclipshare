@@ -1,0 +1,25 @@
+Teile genau die Stelle eines YouTube-Videos, die du meinst – nicht das ganze Video.
+
+Klicke unter einem beliebigen Video auf die neue Schaltfläche „Clip“. Neben dem Video öffnet sich ein Bereich, in dem du Start und Ende festlegst: Gib die Zeiten ein oder klicke im richtigen Moment während der Wiedergabe auf „Jetzt“. Gib dem Clip auf Wunsch einen Titel, sieh ihn dir in der Vorschau an und kopiere den Link.
+
+FÜR ALLE ANSEHBAR, OHNE INSTALLATION
+Der Link öffnet eine Seite, die nur diesen Teil des Videos abspielt – am Computer oder auf dem Handy. Wenn der Clip endet, kann man ihn wiederholen oder weiterschauen. In den meisten Chat-Apps zeigt der Link den Titel deines Clips und das Vorschaubild des Videos.
+
+NOCH BESSER MIT INSTALLIERTEM YOUCLIP
+Lieber einen normalen YouTube-Link? Wähle „YouTube-Link“. Bei allen, die YouClip haben, startet das Video an deiner Startzeit, der Clip wird mit grauen Punkten auf der Fortschrittsleiste markiert, der Rest der Seite wird abgedunkelt und das Video hält an deiner Endzeit an. Ohne YouClip startet es trotzdem im richtigen Moment.
+
+AUSSERDEM
+• Optionaler Clip-Titel, der auf der Seite des Clips und in Link-Vorschauen in Chats erscheint
+• Vorschau des Clips vor dem Teilen
+• Die Schaltfläche in der Symbolleiste öffnet dieselbe Auswahl
+• Funktioniert mit dem hellen und dem dunklen Design von YouTube
+• In 19 Sprachen verfügbar
+
+DATENSCHUTZ VON ANFANG AN
+Die Erweiterung sammelt keine Daten und läuft nur auf youtube.com. Ein Clip-Link enthält nur das Video, die Zeiten und deinen Titel. Keine Konten, keine Werbung, kein Tracking.
+
+KOSTENLOS UND OPEN SOURCE
+YouClip ist ein privates Projekt, ohne Werbung und ohne kostenpflichtige Funktionen. Der Code ist auf GitHub: https://github.com/GCMaia/youtubeclipshare
+Wenn dir YouClip hilft, kannst du mir eine Pizza spendieren: https://buymeacoffee.com/gcmaia
+
+YouClip steht in keiner Verbindung zu YouTube oder Google und wird nicht von ihnen unterstützt.

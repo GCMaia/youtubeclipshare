@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "Udostępniaj własne klipy dzięki rozszerzeniu YouClip"
   },
+  "siteBuyPizza": {
+    "message": "Postaw mi pizzę"
+  },
   "clipButton": {
     "message": "Klip"
   },

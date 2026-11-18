@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "Condividi le tue clip con l’estensione YouClip"
   },
+  "siteBuyPizza": {
+    "message": "Offrimi una pizza"
+  },
   "clipButton": {
     "message": "Clip"
   },

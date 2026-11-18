@@ -28,8 +28,10 @@
   }
   document.documentElement.lang = t('lang');
   document.documentElement.dir = C.isRtlLang(t('lang')) ? 'rtl' : 'ltr';
-  // The footer's link to the extension in the Chrome Web Store (there even when the clip link is broken).
+  // The footer's links to the extension in the Chrome Web Store and to "Buy me a pizza"
+  // (there even when the clip link is broken).
   $('get-extension').textContent = t('siteGetExtension');
+  $('buy-pizza').textContent = t('siteBuyPizza');
 
   function el(tag, className, ...children) {
     const node = document.createElement(tag);

@@ -1,0 +1,25 @@
+Deel precies het stuk van een YouTube-video dat je bedoelt, niet de hele video.
+
+Klik op de nieuwe knop Clip onder een video. Naast de video opent een paneel waarin je het begin en het einde kiest: typ de tijden of druk tijdens het afspelen op het juiste moment op 'Nu'. Geef de clip als je wilt een titel, bekijk hem als voorbeeld en kopieer de link.
+
+IEDEREEN KAN KIJKEN, NIETS TE INSTALLEREN
+De link opent een pagina die alleen dat stuk van de video afspeelt, op een computer of telefoon. Als de clip is afgelopen, kun je hem opnieuw afspelen of verder kijken. In de meeste chat-apps toont de link de titel van je clip en de miniatuur van de video.
+
+NOG BETER MET YOUCLIP GEÏNSTALLEERD
+Liever een gewone YouTube-link? Kies 'YouTube-link'. Bij mensen die YouClip hebben, start de video op jouw begintijd, wordt de clip met grijze stippen op de voortgangsbalk gemarkeerd, wordt de rest van de pagina gedimd en pauzeert de video op jouw eindtijd. Zonder YouClip start de video nog steeds op het juiste moment.
+
+VERDER
+• Optionele cliptitel, zichtbaar op de pagina van de clip en in linkvoorbeelden in chats
+• Bekijk een voorbeeld van de clip voordat je hem deelt
+• De knop in de werkbalk opent dezelfde kiezer
+• Werkt met het lichte en het donkere thema van YouTube
+• Beschikbaar in 19 talen
+
+PRIVACY VOOROP
+De extensie verzamelt geen gegevens en werkt alleen op youtube.com. Een cliplink bevat alleen de video, de tijden en je titel. Geen accounts, geen advertenties, geen tracking.
+
+GRATIS EN OPEN SOURCE
+YouClip is een persoonlijk project, zonder advertenties en zonder betaalde functies. De code staat op GitHub: https://github.com/GCMaia/youtubeclipshare
+Heb je iets aan YouClip? Trakteer me dan op een pizza: https://buymeacoffee.com/gcmaia
+
+YouClip is niet verbonden aan of goedgekeurd door YouTube of Google.

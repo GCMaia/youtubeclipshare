@@ -167,6 +167,9 @@
   "siteGetExtension": {
     "message": "Делитесь своими фрагментами с помощью расширения YouClip"
   },
+  "siteBuyPizza": {
+    "message": "Угостите меня пиццей"
+  },
   "clipButton": {
     "message": "Фрагмент"
   },
